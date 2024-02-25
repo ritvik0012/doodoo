@@ -1,7 +1,6 @@
 import { Fragment, useState } from 'react'
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import Image from 'next/image'
-import Link from 'next/link'
 import {
   ArrowPathIcon,
   Bars3Icon,
@@ -117,7 +116,7 @@ export default function Navbar() {
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-xl font-semibold leading-6 text-gray-900">
+          <a href="/login" className="text-xl font-semibold leading-6 text-gray-900">
             Log in <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
@@ -192,7 +191,7 @@ export default function Navbar() {
               </div>
               <div className="py-6">
                 <a
-                  href="#"
+                  href="/login"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Log in
