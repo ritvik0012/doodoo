@@ -16,13 +16,12 @@ export default function Page(data) {
   }
 
   export async function getStaticProps() {
-    console.log("hey");
     const data = await getStockList();
     return {
       props: {
-        data: data, // remove sheet header
+        data: data,
       },
-      revalidate: 1, // In seconds
+      revalidate: 1, 
     };
 }
 

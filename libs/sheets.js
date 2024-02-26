@@ -1,7 +1,6 @@
 import { google } from 'googleapis';
 export async function getStockList() {
   try {
-    console.log("HEY");
     const target = ['https://www.googleapis.com/auth/spreadsheets.readonly'];
     const jwt = new google.auth.JWT(
         process.env.GOOGLE_SHEETS_CLIENT_EMAIL,
