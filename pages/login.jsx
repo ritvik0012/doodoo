@@ -22,7 +22,7 @@ export default function Login() {
                     let user = response.data.doesUserExist;
                     localStorage.setItem("user",JSON.stringify({email: email, username: user.username}))
                     window.alert('Successfully logged in! Welcome ' + response.data.doesUserExist.username);
-                    router.push('/')
+                    router.push('/home')
                 }
                 else{
                     window.alert(response.data.message);

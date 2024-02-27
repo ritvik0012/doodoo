@@ -46,7 +46,7 @@ export default function Navbar({showValue, setShowValue}) {
             .then((response) => {
                   localStorage.removeItem("user")
                   window.alert("Logged out!")
-                  window.location.reload()
+                  router.push('/')
             })
   }
     else{

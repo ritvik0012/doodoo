@@ -1,25 +1,20 @@
-import { useRouteLoaderData } from 'react-router-dom';
-import Navbar from '../components/navbar'
-import Payment from '../components/payment'
-import Value from './value'
+import {useRouter} from 'next/router'
+import Login from './login'
 import {useState, useEffect} from 'react'
 
 export default function Page() {
   const [isLogin, setIsLogin] = useState(false);
   const [userData, setUserData] = useState(null);
   const [showValue, setShowValue] = useState(false);
+  const router = useRouter()
   useEffect(() => {
     const loginStatus = localStorage.getItem('user');
     setUserData(JSON.parse(loginStatus))
     setIsLogin(loginStatus);
-}, []);
+}, [router]);
     return (
     <>
-    <Navbar showValue = {showValue} setShowValue={setShowValue} />
-    {isLogin && (<h1 className="text-4xl text-center font-bold animate-pulse">
-          Hi, {userData.username}!
-        </h1>)}
-    <Payment />
+    <Login />
     
 
     </>

@@ -24,7 +24,10 @@ export default async function handler (req,res) {
                 path: '/',
             };
 
-            res.setHeader('Set-Cookie', cookie.serialize('doodoo', token, cookieOptions));
+            const serializedCookie = cookie.serialize('doodoo', token, cookieOptions);
+
+    // Set the 'Set-Cookie' header with the serialized cookie
+            res.setHeader('Set-Cookie', serializedCookie);
             return res.status(200).json({message: "success", doesUserExist});
         }
         else{
