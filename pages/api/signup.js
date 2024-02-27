@@ -9,7 +9,6 @@ export default async function handler(req, res){
         var email = req.body.email;
         var doesUserExist = await User.findOne({email: email});
         if(doesUserExist){
-            //const compare = await bcrypt.compare('ritvik12',doesUserExist.password); # for comparison
             return res.status(200).json({message: "User already exists"});
         }
         else{

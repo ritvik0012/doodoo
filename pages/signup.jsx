@@ -22,7 +22,7 @@ export default function Signup() {
                     window.alert('Successfully registered user');
                 }
                 else{
-                    window.alert('Email already exists!');
+                    window.alert(response.data.message);
                 }
             })
         }
