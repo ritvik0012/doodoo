@@ -1,5 +1,6 @@
 import { Fragment, useState, useEffect } from 'react'
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
+import Link from 'next/link'
 import {useRouter} from 'next/router';
 import Image from 'next/image'
 import axios from 'axios'
@@ -30,28 +31,28 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Navbar({showValue, setShowValue}) {
-  const buttonLabel = showValue ? "Hide Portfolio" : "View Portfolio";
+export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const [isLogin, setIsLogin] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
   const router = useRouter();
   useEffect(() => {
-    const loginStatus = localStorage.getItem('user');
-    console.log(loginStatus);
-    setIsLogin(loginStatus);
+    const curUser = localStorage.getItem('user');
+    const fetchToken = async () => {
+      const response = await fetch('api/token');
+      const result = await response.json();
+      setIsAdmin(result.isAdmin)
+    };
+
+    fetchToken();
 }, []);
   const onButtonClick = () => {
-    if(isLogin){
-      axios.post("http://localhost:3000/api/logout")
+    axios.post("http://localhost:3000/api/logout")
             .then((response) => {
                   localStorage.removeItem("user")
                   window.alert("Logged out!")
                   router.push('/')
             })
-  }
-    else{
-      router.push('/login');
-    }
+
   }
 
   return (
@@ -93,23 +94,14 @@ export default function Navbar({showValue, setShowValue}) {
               </Popover.Panel>
             </Transition>
           </Popover>
-          {isLogin && (<a href='/value' className="text-xl font-semibold leading-6 text-gray-900">
-            View Portfolio
-          </a>)}
-          <a href="#" className="text-xl font-semibold leading-6 text-gray-900">
-            Features
-          </a>
-          <a href="/value" className="text-xl font-semibold leading-6 text-gray-900">
-            Marketplace
-          </a>
-          <a href="#" className="text-xl font-semibold leading-6 text-gray-900">
-            Company
-          </a>
+          {(<Link href='/admin' className="text-xl font-semibold leading-6 text-gray-900">
+            Admin Panel
+          </Link>)}
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <button onClick={onButtonClick} className="text-xl font-semibold leading-6 text-gray-900">
-          {isLogin ? "Log out" : "Log in"} <span aria-hidden="true">&rarr;</span>
-          </button>        </div>
+          {!isAdmin && <button onClick={onButtonClick} className="text-xl font-semibold leading-6 text-gray-900">
+          Log out <span aria-hidden="true">&rarr;</span>
+          </button> }       </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
@@ -135,35 +127,17 @@ export default function Navbar({showValue, setShowValue}) {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-              {isLogin && (<a href='/value' className="text-xl font-semibold leading-6 text-gray-900">
-            View Portfolio
-          </a>)}
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Features
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Marketplace
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Company
-                </a>
+              {(<Link href='/admin' className="text-xl font-semibold leading-6 text-gray-900">
+            Admin Panel
+          </Link>)}
               </div>
               <div className="py-6">
-                <button
+                {!isAdmin && <button
                   onClick={onButtonClick}
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  {isLogin ? "Log out" : "Log in"}
-                </button>
+                  Log out
+                </button>}
               </div>
             </div>
           </div>

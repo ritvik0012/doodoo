@@ -1,5 +1,5 @@
 import { google } from 'googleapis';
-export async function getStockList() {
+export async function getStockList(documentId) {
   try {
     const target = ['https://www.googleapis.com/auth/spreadsheets.readonly'];
     const jwt = new google.auth.JWT(
@@ -11,7 +11,7 @@ export async function getStockList() {
 
     const sheets = google.sheets({ version: 'v4', auth: jwt });
     const response = await sheets.spreadsheets.values.get({
-      spreadsheetId: process.env.GOOGLE_SHEETS_DOCUMENT_ID,
+      spreadsheetId: documentId,
       range: 'A1:Z1000',
     });
 

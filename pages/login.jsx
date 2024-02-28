@@ -20,9 +20,14 @@ export default function Login() {
                 console.log(response.data.message)
                 if(response.data.message === "success"){
                     let user = response.data.doesUserExist;
-                    localStorage.setItem("user",JSON.stringify({email: email, username: user.username}))
+                    localStorage.setItem("user",JSON.stringify({email: email, username: user.username, documentId: user.documentId}))
                     window.alert('Successfully logged in! Welcome ' + response.data.doesUserExist.username);
-                    router.push('/home')
+                    if(response.data.doesUserExist.isAdmin){
+                        router.push('/admin')
+                    }
+                    else{
+                        router.push('/home')
+                    }
                 }
                 else{
                     window.alert(response.data.message);

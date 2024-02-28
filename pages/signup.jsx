@@ -1,12 +1,13 @@
 import {useState} from 'react';
 import axios from 'axios';
+import { useRouter } from 'next/router';
 
 
 export default function Signup() {
     const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    
+    const router = useRouter();
     const onButtonClick = () => {
         if(!email || !password || !username){
             window.alert("Fields are empty!");
@@ -20,6 +21,7 @@ export default function Signup() {
                 console.log(response.data.message)
                 if(response.data.message === "success"){
                     window.alert('Successfully registered user');
+                    router.push('/login')
                 }
                 else{
                     window.alert(response.data.message);

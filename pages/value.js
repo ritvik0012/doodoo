@@ -1,19 +1,39 @@
 import {useEffect,useState} from 'react';
 import Mininavbar from '../components/mininavbar';
+import {useRouter} from 'next/router'
+import { user } from '@nextui-org/react';
 export default function Value() {
+  // Add to get value from email -> and validate admin and email
+  const [isAdmin, setIsAdmin] = useState(false)
+  const [documentId, setDocumentId] = useState(null)
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const router = useRouter()
   useEffect(() => {
     setIsLoading(true);
-    fetchData().then(fetchedData => {
-      setData(fetchedData)
-      setIsLoading(false);
-    });
-    //console.log(JSON.stringify(data))
-}, []);
+    const fetchToken = async () => {
+      const response = await fetch('api/token');
+      const result = await response.json();
+      setDocumentId(result.documentId);
+      setIsAdmin(result.isAdmin)
+    };
+
+    fetchToken();
+}, [router.isReady]);
+
+  useEffect(() => {
+    if(!documentId) return
+    if(isAdmin){
+      setDocumentId(router.query.documentId)
+    }
+      fetchData(documentId).then(fetchedData => {
+        setData(fetchedData)
+        setIsLoading(false);
+      });
+
+  },[documentId])
   return(
     <>
-    <Mininavbar />
     <div className="overflow-x-auto p-10">
     {isLoading ? ( // Check if it's loading
             <div className="flex justify-center items-center">
@@ -48,11 +68,15 @@ export default function Value() {
     </>
     );
 }
-const fetchData = async () => {
-  const response = await fetch('/api/stock');
+const fetchData = async (documentId) => {
+  const response = await fetch('/api/stock', {
+        method: 'POST', // Use POST method to send data in the request body
+    headers: {
+      'Content-Type': 'application/json', // Indicate that we're sending JSON data
+    },
+    body: JSON.stringify({ documentId}),
+  });
   const data = await response.json();
   return data;
-  console.log(data)
-  setData(data);
 };
 
