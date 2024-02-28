@@ -24,7 +24,7 @@ export default function Home() {
     useEffect(() => {
       if(!documentId) return
       if(!isAdmin){
-        setUserData('test')
+        setUserData(JSON.parse(localStorage.getItem('user')).username)
       }
       else{
         setUserData(router.query.username)

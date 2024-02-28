@@ -94,7 +94,7 @@ export default function Navbar() {
               </Popover.Panel>
             </Transition>
           </Popover>
-          {(<Link href='/admin' className="text-xl font-semibold leading-6 text-gray-900">
+          {isAdmin && (<Link href='/admin' className="text-xl font-semibold leading-6 text-gray-900">
             Admin Panel
           </Link>)}
         </Popover.Group>
@@ -127,7 +127,7 @@ export default function Navbar() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-              {(<Link href='/admin' className="text-xl font-semibold leading-6 text-gray-900">
+              {isAdmin && (<Link href='/admin' className="text-xl font-semibold leading-6 text-gray-900">
             Admin Panel
           </Link>)}
               </div>
