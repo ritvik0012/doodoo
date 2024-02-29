@@ -10,15 +10,19 @@ export async function middleware(req,res) {
   const cookieHeader = req.headers.get('cookie') || '';
   const parsedCookies = cookie.parse(cookieHeader);
   const token = parsedCookies.doodoo;
+  let isAdmin = false;
   if(token!=null){
     const decode = jwt.decode(token)
+    isAdmin = decode.isAdmin;
   }
   
-  
 
 
-  if (token && (pathname === '/login' || pathname === '/' || pathname === '/signup')) {
+  if (token && !isAdmin && (pathname === '/login' || pathname === '/' || pathname === '/signup' || pathname === '/admin')) {
     return NextResponse.redirect(new URL('/home', req.url));
+  }
+  if(token && isAdmin && (pathname === '/login' || pathname === '/' || pathname === '/signup')){
+    return NextResponse.redirect(new URL('/admin', req.url))
   }
   
   if (!token && (pathname === '/home' || pathname === '/value')) {

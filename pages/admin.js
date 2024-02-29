@@ -28,8 +28,8 @@ export default function Admin() {
       <h2 className="text-2xl font-semibold mb-2">User List</h2>
       <div className="flex flex-col space-y-2">
         {users.map((user, index) => (
-            <Link href={{pathname:"/home", query:{documentId: user.documentId, username: user.username}}} className="text-left py-2 px-4 bg-gray-100 hover:bg-gray-200 rounded-md shadow">
-          <button key={user._id} onClick={() => window.location.href = `/user/${user._id}`}>
+            <Link key={user._id} href={{pathname:"/home", query:{documentId: user.documentId, username: user.username}}} className="text-left py-2 px-4 bg-gray-100 hover:bg-gray-200 rounded-md shadow">
+          <button key={user._id} >
             <span className="font-semibold">{user.username}</span><span>{}</span>
           </button>
           </Link>

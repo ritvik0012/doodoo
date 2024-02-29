@@ -18,7 +18,7 @@ export async function getStockList(documentId) {
     const rows = response.data.values;
     return rows;
   } catch (err) {
-    console.log(err);
+    //console.log(err);
   }
   return [];
 }

@@ -1,5 +1,5 @@
 import {useEffect,useState} from 'react';
-import Mininavbar from '../components/mininavbar';
+import Mininavbar from './mininavbar';
 import {useRouter} from 'next/router'
 import { user } from '@nextui-org/react';
 export default function Value() {
@@ -23,6 +23,7 @@ export default function Value() {
 
   useEffect(() => {
     if(!documentId) return
+    if(isAdmin && !router.query.documentId) return
     if(isAdmin){
       setDocumentId(router.query.documentId)
     }

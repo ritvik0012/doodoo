@@ -1,4 +1,4 @@
-import Value from './value'
+import Value from '../components/value'
 import Navbar from '../components/navbar'
 import Sidebar from '../components/sidenavbar'
 import {useState, useEffect} from 'react'
@@ -27,7 +27,12 @@ export default function Home() {
         setUserData(JSON.parse(localStorage.getItem('user')).username)
       }
       else{
-        setUserData(router.query.username)
+        if(!router.query.username || !router.query.documentId){
+          router.push('/admin')
+        }
+        else{
+          setUserData(router.query.username)
+        }
       }
     },[documentId])
     return (
@@ -37,9 +42,15 @@ export default function Home() {
       <Sidebar setPortfolio={setPortfolio} setDashboard={setDashboard}/>
       <div className="flex-1">
         {portfolio && <Value/>}
-        {dashboard && (<h1 className="text-4xl text-center font-bold animate-pulse">
-          Hi, {userData}!
-        </h1>)}
+        {dashboard && ( !isAdmin ? (
+    <h1 className="text-4xl text-center font-bold animate-pulse">
+      Hi, {userData}!
+    </h1>
+  ) : (
+    <h1 className="text-4xl text-center font-bold animate-pulse">
+    Portal of {userData}
+    </h1>
+  ))}
         {/* If you have other components or page content, they can go here */}
       </div>
     </div>
