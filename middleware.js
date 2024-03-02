@@ -25,7 +25,7 @@ export async function middleware(req,res) {
     return NextResponse.redirect(new URL('/admin', req.url))
   }
   
-  if (!token && (pathname === '/home' || pathname === '/value')) {
+  if (!token && (pathname === '/home' || pathname === '/value' || pathname === '/admin')) {
     return NextResponse.redirect(new URL('/', req.url));
 }
 

@@ -7,6 +7,7 @@ import cookie from 'cookie'
 connect()
 
 export default async function handler (req,res) {
+    console.log("api endpoint hit")
     var email = req.body.email;
     var password = req.body.password;
     var doesUserExist = await User.findOne({email: email});
