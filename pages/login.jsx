@@ -15,7 +15,7 @@ export default function Login() {
             window.alert('Invalid email format');
         }
         else {
-            axios.post("http://localhost:3000/api/login" ,{email: email, password: password})
+            axios.post("api/login" ,{email: email, password: password})
             .then((response) => {
                 console.log(response.data.message)
                 if(response.data.message === "success"){

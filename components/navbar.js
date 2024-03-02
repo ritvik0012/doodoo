@@ -31,7 +31,7 @@ export default function Navbar() {
     fetchToken();
 }, []);
   const onButtonClick = () => {
-    axios.post("http://localhost:3000/api/logout")
+    axios.post("api/logout")
             .then((response) => {
                   localStorage.removeItem("user")
                   window.alert("Logged out!")
