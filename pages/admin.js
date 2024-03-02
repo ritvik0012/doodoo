@@ -4,10 +4,11 @@ import Link from 'next/link'
 import axios from 'axios'
 
 
-export default function Admin() {
-    const [users, setUsers] = useState([])
+export default function Admin({users}) {
+    //const [users, setUsers] = useState([])
     const router = useRouter()
-
+    console.log("USERS: " + users)
+    /*
     useEffect(() => {
         fetch('api/users')
         .then(response => response.json())
@@ -17,6 +18,7 @@ export default function Admin() {
         })
         .catch(error => console.error('Error fetching users:', error));
     }, []);
+    */
 
     const handleLogout = () => {
         axios.post("api/logout")
@@ -50,4 +52,10 @@ export default function Admin() {
           </div>
         </div>
     )
+}
+export async function getServerSideProps() {
+  const res = await fetch('http://localhost:3000/api/users')
+  const data = await res.json()
+  const users = data.filter(user => !user.isAdmin)
+  return {props: {users}}
 }

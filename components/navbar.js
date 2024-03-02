@@ -16,7 +16,7 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 
-export default function Navbar() {
+export default function Navbar({admin}) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [isAdmin, setIsAdmin] = useState(false);
   const router = useRouter();
@@ -84,7 +84,7 @@ export default function Navbar() {
           </Link>)}
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          {!isAdmin && <button onClick={onButtonClick} className="text-xl font-semibold leading-6 text-white">
+          {!admin && <button onClick={onButtonClick} className="text-xl font-semibold leading-6 text-white">
           Log out <span aria-hidden="true">&rarr;</span>
           </button> }       </div>
       </nav>

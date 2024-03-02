@@ -2,15 +2,14 @@ import { useEffect, useState } from 'react';
 import Mininavbar from './mininavbar';
 import { useRouter } from 'next/router'
 
-export default function Value() {
+export default function Value({result,data}) {
   const [isAdmin, setIsAdmin] = useState(false)
   const [documentId, setDocumentId] = useState(null)
-  const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter()
-
+  console.log("TEST: " + result)
   useEffect(() => { 
-    setIsLoading(true);
+   // setIsLoading(true);
     const fetchToken = async () => {
       const response = await fetch('api/token');
       const result = await response.json();
@@ -20,20 +19,6 @@ export default function Value() {
 
     fetchToken();
   }, [router.isReady]);
-
-  useEffect(() => {
-    
-    if(!documentId) return
-    if(isAdmin && !router.query.documentId) return
-    if(isAdmin){
-      setDocumentId(router.query.documentId)
-    }
-      fetchData(documentId).then(fetchedData => {
-        setData(fetchedData)
-        setIsLoading(false);
-      });
-
-  },[documentId])
 
   return(
     <>
@@ -81,3 +66,5 @@ const fetchData = async (documentId) => {
   const data = await response.json();
   return data;
 };
+
+
