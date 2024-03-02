@@ -15,21 +15,6 @@ import {
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
-const products = [
-  { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-  { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-  { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
-]
-const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
-]
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -56,13 +41,13 @@ export default function Navbar() {
   }
 
   return (
-    <header className="bg-white">
+    <header className="bg-gray-50 dark:bg-gray-800">
       <nav className="mx-auto flex max-w-8xl items-center justify-between p-6 lg:px-8" aria-label="Global">
       <div className="flex lg:flex-1 items-center">
   <a href="#" className="flex items-center -m-1.5 p-1.5">
     <div className="flex items-center">
-      <span className="ml-3 text-3xl font-bold">DooDoo.</span>
-      <Image className="h-20 w-auto" src="/doodoo.png" alt="Your Company" width={700} height={800} />
+      <span className="ml-3 text-3xl font-bold text-white">DooDoo.</span>
+      {/*<Image className="h-20 w-auto" src="/doodoo.png" alt="Your Company" width={700} height={800} />*/}
     </div>
   </a>
 </div>
@@ -94,47 +79,42 @@ export default function Navbar() {
               </Popover.Panel>
             </Transition>
           </Popover>
-          {isAdmin && (<Link href='/admin' className="text-xl font-semibold leading-6 text-gray-900">
+          {isAdmin && (<Link href='/admin' className="text-xl font-semibold text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 p-2 h-15 w-35 leading-6 text-white">
             Admin Panel
           </Link>)}
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          {!isAdmin && <button onClick={onButtonClick} className="text-xl font-semibold leading-6 text-gray-900">
+          {!isAdmin && <button onClick={onButtonClick} className="text-xl font-semibold leading-6 text-white">
           Log out <span aria-hidden="true">&rarr;</span>
           </button> }       </div>
       </nav>
-      <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-        <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-          <div className="flex items-center justify-between">
+      <Dialog as="div" className="lg:hidden bg-gray-50 dark:bg-gray-800" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+        <div className="fixed inset-0 z-10 bg-gray-50 dark:bg-gray-800" />
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-gray-50 dark:bg-gray-800 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div className="flex justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              />
             </a>
             <button
               type="button"
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 rounded-md p-2.5 text-white"
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
-              <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+              <XMarkIcon className="h-6 w-6 bg-gray" aria-hidden="true" />
             </button>
           </div>
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-              {isAdmin && (<Link href='/admin' className="text-xl font-semibold leading-6 text-gray-900">
+              {isAdmin && (<Link href='/admin' className="text-xl font-semibold leading-6 hover:bg-gray-100 text-white">
             Admin Panel
           </Link>)}
               </div>
               <div className="py-6">
                 {!isAdmin && <button
                   onClick={onButtonClick}
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text- hover:bg-gray-50"
                 >
                   Log out
                 </button>}
