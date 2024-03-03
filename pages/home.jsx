@@ -15,7 +15,7 @@ export default function Home({result,data}) {
       dashBoardValue = ("PORTAL OF " + router.query.username)
     }
     else{
-      dashBoardValue = ("Welcome " + result.email)
+      dashBoardValue = ("Welcome " + result.username + "!")
     }
     return (
         <>
@@ -60,6 +60,7 @@ const response = await fetch('http://localhost:3000/api/stock', {
   body: JSON.stringify({ documentId }),
 });
 const data = await response.json();
+const dataString = JSON.stringify(data)
 return {props:{result,data:data}}
 
 }

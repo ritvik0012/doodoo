@@ -20,16 +20,6 @@ export default function Navbar({admin}) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [isAdmin, setIsAdmin] = useState(false);
   const router = useRouter();
-  useEffect(() => {
-    const curUser = localStorage.getItem('user');
-    const fetchToken = async () => {
-      const response = await fetch('api/token');
-      const result = await response.json();
-      setIsAdmin(result.isAdmin)
-    };
-
-    fetchToken();
-}, []);
   const onButtonClick = () => {
     axios.post("api/logout")
             .then((response) => {
@@ -79,7 +69,7 @@ export default function Navbar({admin}) {
               </Popover.Panel>
             </Transition>
           </Popover>
-          {isAdmin && (<Link href='/admin' className="text-xl font-semibold text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 p-2 h-15 w-35 leading-6 text-white">
+          {admin && (<Link href='/admin' className="text-xl font-semibold text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 p-2 h-15 w-35 leading-6 text-white">
             Admin Panel
           </Link>)}
         </Popover.Group>
@@ -107,12 +97,12 @@ export default function Navbar({admin}) {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-              {isAdmin && (<Link href='/admin' className="text-xl font-semibold leading-6 hover:bg-gray-100 text-white">
+              {admin && (<Link href='/admin' className="text-xl font-semibold leading-6 hover:bg-gray-100 text-white">
             Admin Panel
           </Link>)}
               </div>
               <div className="py-6">
-                {!isAdmin && <button
+                {!admin && <button
                   onClick={onButtonClick}
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text- hover:bg-gray-50"
                 >

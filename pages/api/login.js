@@ -17,7 +17,7 @@ export default async function handler (req,res) {
     else {
         const compare = await bcrypt.compare(password,doesUserExist.password);
         if(compare){
-            const token = jwt.sign({email: doesUserExist.email, isAdmin: doesUserExist.isAdmin, documentId: doesUserExist.documentId}, "secret");
+            const token = jwt.sign({username: doesUserExist.username, email: doesUserExist.email, isAdmin: doesUserExist.isAdmin, documentId: doesUserExist.documentId}, "secret");
             const cookieOptions = {
                 httpOnly: true,
                 secure: process.env.NODE_ENV !== 'development',
@@ -26,11 +26,8 @@ export default async function handler (req,res) {
             };
             console.log(doesUserExist)
 
-            const serializedCookie = cookie.serialize('doodoo', token, cookieOptions);
-
-    // Set the 'Set-Cookie' header with the serialized cookie
+            const serializedCookie = cookie.serialize('doodoo', token, cookieOptions)
             res.setHeader('Set-Cookie', serializedCookie);
-            console.log("Y: "+ token)
             return res.status(200).json({message: "success", doesUserExist});
         }
         else{
