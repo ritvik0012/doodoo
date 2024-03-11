@@ -15,19 +15,8 @@ import {
 } from '@heroicons/react/24/outline'
 
 
-export default function Navbar({admin}) {
+export default function Homenav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const [isAdmin, setIsAdmin] = useState(false);
-  const router = useRouter();
-  const onButtonClick = () => {
-    axios.post("api/logout")
-            .then((response) => {
-                  localStorage.removeItem("user")
-                  window.alert("Logged out!")
-                  router.push('/')
-            })
-
-  }
 
   return (
     <header className="bg-gray-50 dark:bg-gray-800">
@@ -68,14 +57,23 @@ export default function Navbar({admin}) {
               </Popover.Panel>
             </Transition>
           </Popover>
-          {admin && (<Link href='/admin' className="text-xl font-semibold text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 p-2 h-15 w-35 leading-6 text-white">
-            Admin Panel
-          </Link>)}
+          <Link href='/aboutme' className="text-xl font-semibold text-gray-900 dark:text-white hover:underline decoration-sky-600 hover:decoration-blue-400 text-white">
+            About me
+          </Link>
+          <Link href='/aboutme' className="text-xl font-semibold text-gray-900 dark:text-white hover:underline decoration-sky-600 hover:decoration-blue-400 text-white">
+            Work
+          </Link>
+          <Link href='/aboutme' className="text-xl font-semibold text-gray-900 dark:text-white hover:underline decoration-sky-600 hover:decoration-blue-400 text-white">
+            Client Reviews
+          </Link>
+          <Link href='/aboutme' className="text-xl font-semibold text-gray-900 dark:text-white hover:underline decoration-sky-600 hover:decoration-blue-400 text-white">
+            Contact Me
+          </Link>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          {!admin && <button onClick={onButtonClick} className="text-xl font-semibold leading-6 text-white">
-          Log out <span aria-hidden="true">&rarr;</span>
-          </button> }       </div>
+          <button className="text-xl text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
+          Login <span aria-hidden="true"></span>
+          </button>       </div>
       </nav>
       <Dialog as="div" className="lg:hidden bg-gray-50 dark:bg-gray-800" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10 bg-gray-50 dark:bg-gray-800" />
@@ -96,16 +94,12 @@ export default function Navbar({admin}) {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-              {admin && (<Link href='/admin' className="text-xl font-semibold leading-6 hover:bg-gray-100 text-white">
-            Admin Panel
-          </Link>)}
               </div>
               <div className="py-6">
-                {!admin && <button
-                  onClick={onButtonClick}
+                {<button
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text- hover:bg-gray-50"
                 >
-                  Log out
+                  Login
                 </button>}
               </div>
             </div>

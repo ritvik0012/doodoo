@@ -5,7 +5,7 @@ import {useState, useEffect} from 'react'
 import jwt from 'jsonwebtoken'
 import {useRouter} from 'next/router'
 import cookie from 'cookie'
-//import { content } from 'googleapis/build/src/apis/content'
+
 export default function Home({result,data}) {
     const [dashboard, setDashboard] = useState(true);
     const [portfolio, setPortfolio] = useState(false);
@@ -30,7 +30,6 @@ export default function Home({result,data}) {
     </h1>
 
   )}
-        {/* If you have other components or page content, they can go here */}
       </div>
     </div>
     

@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import Mininavbar from './mininavbar';
 import { useRouter } from 'next/router'
 
 export default function Value({result,data}) {
@@ -9,7 +8,6 @@ export default function Value({result,data}) {
   const [isLoading, setIsLoading] = useState(false);
   const [selectedDate, setSelectedDate] = useState(new Date().toISOString().split('T')[0])
   const router = useRouter()
-  console.log("TEST: " + result)
   const handleDateChange = (event) => {
     setSelectedDate(event.target.value);
   };

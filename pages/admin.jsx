@@ -5,20 +5,8 @@ import axios from 'axios'
 
 
 export default function Admin({users}) {
-    //const [users, setUsers] = useState([])
+
     const router = useRouter()
-    console.log("USERS: " + users)
-    /*
-    useEffect(() => {
-        fetch('api/users')
-        .then(response => response.json())
-        .then(data => {
-            const nonAdminUsers = data.filter(user => !user.isAdmin);
-            setUsers(nonAdminUsers);
-        })
-        .catch(error => console.error('Error fetching users:', error));
-    }, []);
-    */
 
     const handleLogout = () => {
         axios.post("api/logout")
