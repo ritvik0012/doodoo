@@ -41,7 +41,7 @@ export default function Admin({users}) {
         </div>
     )
 }
-export async function getServerSideProps() {
+export async function getServerSideProps(context) {
   const res = await fetch('http://localhost:3000/api/users')
   const data = await res.json()
   const users = data.filter(user => !user.isAdmin)

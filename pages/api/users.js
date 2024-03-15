@@ -1,5 +1,6 @@
 import {connect} from '@/dbConfig/dbConfig'
 import User from '@/models/userModels'
+import cookie from 'cookie'
 connect()
 
 export default async function handler(req,res){
