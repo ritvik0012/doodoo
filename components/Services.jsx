@@ -39,7 +39,7 @@ export default function Services (){
     <>
         <div className='px-4 py-10 md:px-20'>
       <div className="relative">
-      <h3 className="pl-3 text-4xl font-bold">Services</h3>
+      <h3 className="pl-3 text-6xl font-bold">Services</h3>
     </div>
       <div className="mt-10 grid gap-8 md:grid-cols-3">
         {services.map((service, index) => (

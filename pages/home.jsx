@@ -42,7 +42,6 @@ export default function Home({result,data}) {
 export async function getServerSideProps(context) {
 const cookieHeader = await context.req.headers.cookie || '';
 const parsedCookies = cookie.parse(cookieHeader)
-console.log(parsedCookies)
 const result = jwt.decode(parsedCookies.doodoo)
 let documentId
 if(result.isAdmin){
@@ -54,7 +53,8 @@ else{
 const response = await fetch('http://localhost:3000/api/stock', {
   method: 'POST', // Use POST method to send data in the request body
   headers: {
-    'Content-Type': 'application/json', // Indicate that we're sending JSON data
+    'Content-Type': 'application/json',
+    'cookies':context.req.headers.cookie,
   },
   body: JSON.stringify({ documentId }),
 });

@@ -1,15 +1,13 @@
 import '../styles/globals.css'
 import Head from 'next/head'
+import {useEffect} from 'react'
 export default function App({ Component, pageProps }) {
+  useEffect(() => {
+   // document.body.classList.add("dark")
+  })
     return (
     <>
     <Head>
-        <style>{`
-          body { 
-            background-color: #1F2937; /* Tailwind's dark:bg-gray-800 */
-            color: #F9FAFB; /* Tailwind's text-white */
-          }
-        `}</style>
       </Head>
     <Component {...pageProps} />
     </>
