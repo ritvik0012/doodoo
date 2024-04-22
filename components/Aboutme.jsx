@@ -11,7 +11,7 @@ export default function About(){
                 {/*<span className="text-gray-500 border-b-2 border-indigo-600 uppercase">About us</span>*/}
                 <h1 className="my-4 font-bold text-6xl ">About <span className="text-indigo-600">Doodoo</span>
                 </h1>
-                <p className=" my-4 font-semi-bold text-white text-3xl">
+                <p className=" my-4 font-semi-bold text-white text-2xl">
                 Experience unbiased, product-agnostic investment advice personalised to your goals & aspirations.
                 </p>
             </div>

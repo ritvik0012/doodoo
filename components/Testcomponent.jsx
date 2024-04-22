@@ -29,7 +29,7 @@ export default function TestComponent() {
                     </li>
                 </ul>
             ),
-            bgColor: "bg-gray-900",
+            bgColor: "bg-gray-800",
         },
         {
             id: 2,
@@ -87,7 +87,7 @@ export default function TestComponent() {
                     </li>
                 </ul>
             ),
-            bgColor: "bg-gray-700",
+            bgColor: "bg-gray-800",
         },
         {
             id: 4,
@@ -116,7 +116,7 @@ export default function TestComponent() {
                     </li>
                 </ul>
             ),
-            bgColor: "bg-gray-600",
+            bgColor: "bg-gray-800",
         },
     ];
 
@@ -136,11 +136,14 @@ export default function TestComponent() {
                           </div>
                       ))}
                   </div>
-              </div>
+              </div>{/*
               <div className="w-full md:w-1/3 p-6 flex justify-center items-center">
                   <img src="https://i.imgur.com/WbQnbas.png" alt="Service Image" className="max-w-full h-auto rounded-lg shadow" />
               </div>
+              */
+}
           </div>
+              
       </div>
   </>
             

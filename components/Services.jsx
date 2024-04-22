@@ -4,15 +4,7 @@ import React from 'react';
 import classNames from 'classnames'
 
 const bgClasses = [
-  'bg-indigo-500 text-indigo-100',
-  'bg-yellow-400 text-yellow-900',
-  'bg-pink-400 text-pink-900',
-  'bg-purple-500 text-purple-100',
-  'bg-green-500 text-green-100',
-  'bg-blue-500 text-blue-100',
-  'bg-red-500 text-red-100',
-  'bg-slate-500 text-slate-100',
-  'bg-teal-500 text-teal-100',
+  'bg-gray-800 text-white',
 ];
 
 const getBackgroundClass = (index) => {
@@ -50,7 +42,7 @@ export default function Services (){
             <div className='flex justify-center'>
             <Image src={service.image} height={80} width={80} alt={service.name} />
             </div>
-            <h4 className="mt-4 text-xl font-semibold">{service.name}</h4>
+            <h4 className="mt-4 text-xl text-red font-semibold">{service.name}</h4>
             <p className="mt-4">{service.description}</p>
           </div>
         ))}

@@ -2,6 +2,7 @@ import Homenav from '../components/Homenav'
 import About from '../components/Aboutme'
 import Services from '../components/Services'
 import Testcomponent from '../components/Testcomponent'
+import Contact from '../components/Contact'
 import {useEffect} from 'react'
 export default function Homepage() {
     useEffect(() => {
@@ -13,6 +14,7 @@ export default function Homepage() {
         <About />
         <Services />
         <Testcomponent />
+        <Contact />
         </>
     )
 }
