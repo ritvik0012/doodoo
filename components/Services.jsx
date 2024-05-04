@@ -4,7 +4,7 @@ import React from 'react';
 import classNames from 'classnames'
 
 const bgClasses = [
-  'bg-gray-800 text-white',
+  'bg-gray-800',
 ];
 
 const getBackgroundClass = (index) => {
@@ -13,27 +13,32 @@ const getBackgroundClass = (index) => {
 
 export default function Services (){
     const services = [{
-        name: 'Web Development',
-        description: 'Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.',
+        name: 'Non-Resident Indians (NRIs)',
+        description: 'seeking customised & personal financial guidance for investing in India while living abroad, growing their wealth sustainably with trust , confidence and long term relationships.',
+        image: '/nri.png',
+      },
+      {
+        name: 'Busy Entrepreneurs',
+        description: 'seeking financial advice to manage their financial assets by optimizing risk reward and asset allocation strategies.',
         image: '/web-development.png',
       },
       {
-        name: 'UI/UX Design',
-        description: 'Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.',
+        name: 'Young Professionals',
+        description: 'seeking guidance on building a strong financial foundation, planning for future milestones with long term investment strategies',
         image: '/web-development.png',
       },
       {
-        name: 'Mobile Application',
-        description: 'Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.',
+        name: 'To be Retirees',
+        description: 'looking for secure retirement planning and ensuring financial stability in their golden years.',
         image: '/web-development.png',
-      },]
+      }]
   return (
     <>
         <div className='px-4 py-10 md:px-20'>
       <div className="relative">
-      <h3 className="pl-3 text-6xl font-bold">Services</h3>
+      <h3 className="pl-3 text-6xl font-bold">Who we assist</h3>
     </div>
-      <div className="mt-10 grid gap-8 md:grid-cols-3">
+      <div className="mt-10 grid gap-8 md:grid-cols-4">
         {services.map((service, index) => (
           <div
             key={index}
@@ -42,8 +47,8 @@ export default function Services (){
             <div className='flex justify-center'>
             <Image src={service.image} height={80} width={80} alt={service.name} />
             </div>
-            <h4 className="mt-4 text-xl text-red font-semibold">{service.name}</h4>
-            <p className="mt-4">{service.description}</p>
+            <h4 className="mt-4 text-2xl text-orange-400 font-semibold">{service.name}</h4>
+            <p className="mt-4 text-lg">{service.description}</p>
           </div>
         ))}
       </div>

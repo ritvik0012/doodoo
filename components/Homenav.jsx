@@ -58,16 +58,19 @@ export default function Homenav() {
             </Transition>
           </Popover>
           <Link href='/aboutme' className="text-xl font-semibold text-gray-900 dark:text-white hover:underline decoration-sky-600 hover:decoration-blue-400 text-white">
-            About me
+            Who we are
           </Link>
           <Link href='/aboutme' className="text-xl font-semibold text-gray-900 dark:text-white hover:underline decoration-sky-600 hover:decoration-blue-400 text-white">
-            Work
+            What we do
           </Link>
           <Link href='/aboutme' className="text-xl font-semibold text-gray-900 dark:text-white hover:underline decoration-sky-600 hover:decoration-blue-400 text-white">
-            Client Reviews
+            Who we assist
           </Link>
           <Link href='/aboutme' className="text-xl font-semibold text-gray-900 dark:text-white hover:underline decoration-sky-600 hover:decoration-blue-400 text-white">
-            Contact Me
+            Contact
+          </Link>
+          <Link href='/aboutme' className="text-xl font-semibold text-gray-900 dark:text-white hover:underline decoration-sky-600 hover:decoration-blue-400 text-white">
+            Talk to us
           </Link>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
