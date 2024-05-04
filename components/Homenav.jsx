@@ -24,7 +24,7 @@ export default function Homenav() {
       <div className="flex lg:flex-1 items-center">
   <a href="#" className="flex items-center -m-1.5 p-1.5">
     <div className="flex items-center">
-      <span className="ml-3 text-3xl font-bold text-white">DooDoo.</span>
+      <span className="ml-3 text-3xl font-bold text-white">Equity Street</span>
       {/*<Image className="h-20 w-auto" src="/doodoo.png" alt="Your Company" width={700} height={800} />*/}
     </div>
   </a>

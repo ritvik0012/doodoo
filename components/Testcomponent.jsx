@@ -5,25 +5,111 @@ export default function TestComponent() {
         {
             id: 1,
             title: "PERSONALISED FINANCIAL PLANNING ",
-            description: "The demand for personalized financial planning services is on the rise, as individuals seek tailored strategies to meet their specific investment goals. . Based on  life goals , we design, execute and monitor financial plans for the identified goals.",
+            description: (
+                <ul className="space-y-4 text-left ml-15 text-gray-500 dark:text-gray-400">
+                <li className="flex items-center space-x-3">
+                    <CheckmarkIcon />
+                    <span>The demand for personalized financial planning services is on the rise</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                    <CheckmarkIcon />
+                    <span> Based on  life goals , we design, execute and monitor financial plans for the identified goals.</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                    <CheckmarkIcon />
+                    <span>Team size: <span className="font-semibold text-gray-900 dark:text-white">1 developer</span></span>
+                </li>
+                <li className="flex items-center space-x-3">
+                    <CheckmarkIcon />
+                    <span>Premium support: <span className="font-semibold text-gray-900 dark:text-white">6 months</span></span>
+                </li>
+                <li className="flex items-center space-x-3">
+                    <CheckmarkIcon />
+                    <span>Free updates: <span className="font-semibold text-gray-900 dark:text-white">6 months</span></span>
+                </li>
+            </ul>
+            ),
             bgColor: "bg-gray-800",
         },
         {
             id: 2,
             title: "PORTFOLIO MANAGEMENT",
-            description: "Investment portfolio management services are increasingly sought after by non-resident Indians, entrepreneurs, and high net worth individuals looking to grow and protect their wealth. We offer portfolio management services focusing on asset allocation, diversification and risk return reward  to optimize investment portfolios for clients based on their risk profile.",
+            description: (<ul className="space-y-4 text-left text-gray-500 dark:text-gray-400">
+            <li className="flex items-center space-x-3">
+                <CheckmarkIcon />
+                <span>Individual configuration</span>
+            </li>
+            <li className="flex items-center space-x-3">
+                <CheckmarkIcon />
+                <span>No setup, or hidden fees</span>
+            </li>
+            <li className="flex items-center space-x-3">
+                <CheckmarkIcon />
+                <span>Team size: <span className="font-semibold text-gray-900 dark:text-white">1 developer</span></span>
+            </li>
+            <li className="flex items-center space-x-3">
+                <CheckmarkIcon />
+                <span>Premium support: <span className="font-semibold text-gray-900 dark:text-white">6 months</span></span>
+            </li>
+            <li className="flex items-center space-x-3">
+                <CheckmarkIcon />
+                <span>Free updates: <span className="font-semibold text-gray-900 dark:text-white">6 months</span></span>
+            </li>
+        </ul>),
             bgColor: "bg-gray-800",
         },
         {
             id: 3,
             title: "RETIREMENT PLANNING",
-            description: "Retirement planning services are becoming essential as people look to create customized financial planning and strategies for a secure and comfortable retirement.",
+            description: (<ul className="space-y-4 text-left text-gray-500 dark:text-gray-400">
+            <li className="flex items-center space-x-3">
+                <CheckmarkIcon />
+                <span>Individual configuration</span>
+            </li>
+            <li className="flex items-center space-x-3">
+                <CheckmarkIcon />
+                <span>No setup, or hidden fees</span>
+            </li>
+            <li className="flex items-center space-x-3">
+                <CheckmarkIcon />
+                <span>Team size: <span className="font-semibold text-gray-900 dark:text-white">1 developer</span></span>
+            </li>
+            <li className="flex items-center space-x-3">
+                <CheckmarkIcon />
+                <span>Premium support: <span className="font-semibold text-gray-900 dark:text-white">6 months</span></span>
+            </li>
+            <li className="flex items-center space-x-3">
+                <CheckmarkIcon />
+                <span>Free updates: <span className="font-semibold text-gray-900 dark:text-white">6 months</span></span>
+            </li>
+        </ul>),
             bgColor: "bg-gray-800",
         },
         {
             id: 4,
             title: "INVESTMENT ADVISORY SERVICES",
-            description: "We offer investment advisory services that provide comprehensive advice and report tailored to individual goals and risk tolerance for their investment decision and  requirements.",
+            description: (<ul className="space-y-4 text-left text-gray-500 dark:text-gray-400">
+            <li className="flex items-center space-x-3">
+                <CheckmarkIcon />
+                <span>Individual configuration</span>
+            </li>
+            <li className="flex items-center space-x-3">
+                <CheckmarkIcon />
+                <span>No setup, or hidden fees</span>
+            </li>
+            <li className="flex items-center space-x-3">
+                <CheckmarkIcon />
+                <span>Team size: <span className="font-semibold text-gray-900 dark:text-white">1 developer</span></span>
+            </li>
+            <li className="flex items-center space-x-3">
+                <CheckmarkIcon />
+                <span>Premium support: <span className="font-semibold text-gray-900 dark:text-white">6 months</span></span>
+            </li>
+            <li className="flex items-center space-x-3">
+                <CheckmarkIcon />
+                <span>Free updates: <span className="font-semibold text-gray-900 dark:text-white">6 months</span></span>
+            </li>
+        </ul>),
             bgColor: "bg-gray-800",
         },
     ];
@@ -32,14 +118,14 @@ export default function TestComponent() {
       <>
       <div className="px-4 py-20 md:px-20">
           <div className="text-center mb-10">
-              <h3 className="text-6xl font-bold">What we do</h3>
+              <h3 className="text-6xl font-bold">What We Do</h3>
           </div>
           <div className="flex flex-wrap justify-center md:flex-nowrap">
               <div className="w-full md:w-2/3 p-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       {services.map((service) => ( 
                           <div key={service.id} className={`p-6 rounded-lg shadow ${service.bgColor}`}>
-                              <h2 className="font-bold text-3xl mb-2 text-orange-400 text-center">{service.title}</h2>
+                              <h2 className="font-bold text-2xl mb-2 text-orange-400">{service.title}</h2>
                               <div className="text-xl text-center overflow-auto">{service.description}</div>
                           </div>
                       ))}
@@ -56,4 +142,11 @@ export default function TestComponent() {
   </>
             
     );
+    function CheckmarkIcon() {
+        return (
+            <svg className="flex-shrink-0 w-3.5 h-3.5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5.917 5.724 10.5 15 1.5" />
+            </svg>
+        );
+    }
 }

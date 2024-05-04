@@ -20,7 +20,7 @@ export default function Services (){
       {
         name: 'Busy Entrepreneurs',
         description: 'seeking financial advice to manage their financial assets by optimizing risk reward and asset allocation strategies.',
-        image: '/web-development.png',
+        image: '/busy.png',
       },
       {
         name: 'Young Professionals',
@@ -36,7 +36,7 @@ export default function Services (){
     <>
         <div className='px-4 py-10 md:px-20'>
       <div className="relative">
-      <h3 className="pl-3 text-6xl font-bold">Who we assist</h3>
+      <h3 className="pl-3 text-6xl font-bold">Who We Assist</h3>
     </div>
       <div className="mt-10 grid gap-8 md:grid-cols-4">
         {services.map((service, index) => (

@@ -10,7 +10,7 @@ export default function About(){
         <div className="sm:w-2/3 p-5">
             <div className="text">
                 {/*<span className="text-gray-500 border-b-2 border-indigo-600 uppercase">About us</span>*/}
-                <h1 className="my-4 font-bold text-6xl ">Equity <span className="text-indigo-600">Trust</span>
+                <h1 className="my-4 font-bold text-6xl ">Equity <span className="text-indigo-600">Street</span>
                 </h1>
                 <p className=" my-4 font-semi-bold text-white text-2xl">
                 Experience unbiased, product-agnostic investment advice personalised to your goals & aspirations.
