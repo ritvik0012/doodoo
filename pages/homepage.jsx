@@ -9,12 +9,11 @@ export default function Homepage() {
         document.body.classList.add("dark");
     })
     return (
-        <>
+        <div className="bg-achu">
         <Homenav />
         <About />
+        <Services/>
         <Services />
-        <Testcomponent />
-        <Contact />
-        </>
+        </div>
     )
 }

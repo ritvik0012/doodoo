@@ -4,7 +4,7 @@ import React from 'react';
 import classNames from 'classnames'
 
 const bgClasses = [
-  'bg-gray-800',
+  'bg-gray-700',
 ];
 
 const getBackgroundClass = (index) => {
@@ -34,9 +34,9 @@ export default function Services (){
       }]
   return (
     <>
-        <div className='px-4 py-10 md:px-20'>
+        <div className='px-4 py-20 mt-15 md:px-20'>
       <div className="relative">
-      <h3 className="pl-3 text-6xl font-bold">Who We Assist</h3>
+      <h3 className="pl-3 text-6xl font-test font-bold text-gray-900 text-center">Who We Assist</h3>
     </div>
       <div className="mt-10 grid gap-8 md:grid-cols-4">
         {services.map((service, index) => (

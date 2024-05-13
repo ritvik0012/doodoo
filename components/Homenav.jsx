@@ -19,12 +19,12 @@ export default function Homenav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="">
+    <header className="bg-red-800">
       <nav className="mx-auto flex max-w-8xl items-center justify-between p-6 lg:px-8" aria-label="Global">
       <div className="flex lg:flex-1 items-center">
   <a href="#" className="flex items-center -m-1.5 p-1.5">
     <div className="flex items-center">
-      <span className="ml-3 text-3xl font-bold text-white">Equity Street</span>
+      <span className="ml-3 text-5xl font-test font-bold text-black">Equity Street</span>
       {/*<Image className="h-20 w-auto" src="/doodoo.png" alt="Your Company" width={700} height={800} />*/}
     </div>
   </a>
@@ -57,24 +57,24 @@ export default function Homenav() {
               </Popover.Panel>
             </Transition>
           </Popover>
-          <Link href='/aboutme' className="text-xl font-semibold text-gray-900 dark:text-white hover:underline decoration-sky-600 hover:decoration-blue-400 text-white">
+          <Link href='/aboutme' className="text-3xl font-bold font-bold font-test text-gray-900 dark:text-black hover:underline decoration-sky-600 hover:decoration-blue-400 ">
             Who we are
           </Link>
-          <Link href='/aboutme' className="text-xl font-semibold text-gray-900 dark:text-white hover:underline decoration-sky-600 hover:decoration-blue-400 text-white">
+          <Link href='/aboutme' className="text-3xl font-bold font-test text-gray-900 dark:text-black hover:underline decoration-sky-600 hover:decoration-blue-400 ">
             What we do
           </Link>
-          <Link href='/aboutme' className="text-xl font-semibold text-gray-900 dark:text-white hover:underline decoration-sky-600 hover:decoration-blue-400 text-white">
+          <Link href='/aboutme' className="text-3xl font-bold font-test text-gray-900 dark:text-black hover:underline decoration-sky-600 hover:decoration-blue-400 ">
             Who we assist
           </Link>
-          <Link href='/aboutme' className="text-xl font-semibold text-gray-900 dark:text-white hover:underline decoration-sky-600 hover:decoration-blue-400 text-white">
+          <Link href='/aboutme' className="text-3xl font-bold font-test text-gray-900 dark:text-black hover:underline decoration-sky-600 hover:decoration-blue-400 ">
             Contact
           </Link>
-          <Link href='/aboutme' className="text-xl font-semibold text-gray-900 dark:text-white hover:underline decoration-sky-600 hover:decoration-blue-400 text-white">
+          <Link href='/aboutme' className="text-3xl font-bold font-test text-gray-900 dark:text-black hover:underline decoration-sky-600 hover:decoration-blue-400 ">
             Talk to us
           </Link>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <button className="text-2xl text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-2xl px-8 py-3 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
+          <button className="text-2xl text-white bg-gray-800 font-test hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-2xl px-8 py-3 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
           Login <span aria-hidden="true"></span>
           </button>       </div>
       </nav>
