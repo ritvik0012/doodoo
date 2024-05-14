@@ -10,13 +10,13 @@ export default function About(){
         <div className="sm:w-2/3 p-5">
             <div className="text">
                 {/*<span className="text-gray-500 border-b-2 border-indigo-600 uppercase">About us</span>*/}
-                <h1 className="my-4 font-test text-gray-900 font-bold text-6xl ">WHAT WE <span className="text-bull">DO</span>
+                <h1 className="my-4 font-test text-gray-900 font-bold text-6xl ">WHO WE <span className="text-bull">ARE</span>
                 </h1> 
-                <p className=" my-4 mt-10 font-semi-bold text-gray-900 font-test text-bold text-2xl">
-                We are Equity Street Investment Advisors, a financial investment advisory firm based in Bangalore. We offer personalized financial planning services to a diverse range of clients including Non Resident Indians, Entrepreneurs,  High Net Worth Individuals and young professionals seeking expert financial advice.
+                <p className=" my-4 mt-10 font-semi-bold text-gray-900 font-test text-bold text-justify text-2xl">
+                We are Equity Street Investment Advisor, a financial investment advisory firm based in Bangalore. We offer personalized financial planning services to a diverse range of clients including Non Resident Indians, Entrepreneurs,  High Net Worth Individuals and young professionals seeking expert financial advice.
 
                 <br/><br/>
-Equity Street Investment Advisors was founded with a vision to provide personal and customized financial plans and solutions to individuals looking to  grow, diversify and preserve their wealth. We focus on personalized services and a client-centric approach to build long-lasting relationships with our clients based on trust, transparency, confidence and exceptional service.
+Equity Street Investment Advisor was founded with a vision to provide personal and customized financial plans and solutions to individuals looking to  grow, diversify and preserve their wealth. We focus on personalized services and a client-centric approach to build long-lasting relationships with our clients based on trust, transparency, confidence and exceptional service.
 
                 </p>
             </div>
