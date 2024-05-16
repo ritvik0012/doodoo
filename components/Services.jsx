@@ -13,23 +13,23 @@ const getBackgroundClass = (index) => {
 
 export default function Services (){
     const services = [{
-        name: 'NON-RESIDENT INDIANS',
-        description: 'seeking customised & personal financial guidance for investing in India while living abroad, growing their wealth sustainably with trust , confidence and long term relationships.',
+        name: 'NRI\'S',
+        description: 'Seeking customised & personal financial guidance for investing in India while living abroad, growing their wealth sustainably with trust , confidence and long term relationships.',
         image: '/nri.png',
       },
       {
         name: 'BUSY ENTREPENEURS',
-        description: 'seeking financial advice to manage their financial assets by optimizing risk reward and asset allocation strategies.',
+        description: 'Seeking financial advice to manage their financial assets by optimizing risk reward and asset allocation strategies.',
         image: '/busy.png',
       },
       {
-        name: 'YOUNG PROFESSIONALS',
-        description: 'seeking guidance on building a strong financial foundation, planning for future milestones with long term investment strategies',
+        name: 'YOUNG PRO\'S',
+        description: 'Seeking guidance on building a strong financial foundation, planning for future milestones with long term investment strategies.',
         image: '/web-development.png',
       },
       {
         name: 'TO BE RETIREES',
-        description: 'looking for secure retirement planning and ensuring financial stability in their golden years.',
+        description: 'Seeking secure retirement planning and ensuring financial stability in their golden years.',
         image: '/web-development.png',
       }]
   return (

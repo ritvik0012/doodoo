@@ -18,7 +18,7 @@ export default function Services (){
             <ul className="space-y-4 text-left ml-15 text-white dark:text-white">
             <li className="items-center text-justify">
             <span className="text-3xl before:content-['>'] text-bold text-achu"></span>  
-                <span className="pl-2">Personalized financial planning services  to meet  specific financial life goals</span>
+                <span className="pl-2">Personalized financial planning services  to meet  specific financial life goals.</span>
             </li>
             <li className="items-center text-justify">
             <span className="text-3xl before:content-['>'] text-bold text-achu"></span> 
@@ -41,7 +41,7 @@ export default function Services (){
             </li>
             <li className="items-center text-justify">
     
-            <span className="text-3xl before:content-['>'] text-bold text-achu"></span>  <span className="pl-2">  Client specific asset allocation & equity diversification to optimise risk return reward  </span>
+            <span className="text-3xl before:content-['>'] text-bold text-achu"></span>  <span className="pl-2">  Client specific asset allocation & equity diversification to optimise risk return reward. </span>
             </li>
             <li className="items-center text-justify">
 
