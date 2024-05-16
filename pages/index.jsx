@@ -1,5 +1,6 @@
 import {useRouter} from 'next/router'
 import Login from './login'
+import Homepage from './homepage'
 import {useState, useEffect} from 'react'
 
 export default function Page() {
@@ -14,7 +15,7 @@ export default function Page() {
 }, [router]);
     return (
     <>
-    <Login />
+    <Homepage />
     
 
     </>

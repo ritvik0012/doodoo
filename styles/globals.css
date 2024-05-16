@@ -4,5 +4,5 @@
 @tailwind components;
 @tailwind utilities;
 
-body{  background-color: rgb(30,34,39);  color: #fff;}
-body[class*=language-],body.dark table tbody>tr:nth-child(odd)>td,body.dark table tbody>tr:nth-child(odd)>th {  background: #282c34}
+body{  background-color: #ffbd59;  color: #fff;}
+body[class*=language-],body.dark table tbody>tr:nth-child(odd)>td,body.dark table tbody>tr:nth-child(odd)>th {  background: #ffbd59}

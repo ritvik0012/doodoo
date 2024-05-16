@@ -22,12 +22,12 @@ export default function Homenav() {
     <header className="bg-red-800">
       <nav className="mx-auto flex max-w-8xl items-center justify-between p-6 lg:px-8" aria-label="Global">
       <div className="flex lg:flex-1 items-center">
-  <a href="#" className="flex items-center -m-1.5 p-1.5">
+  <div className="flex items-center -m-1.5 p-1.5">
     <div className="flex items-center">
-      <span className="ml-3 text-5xl font-test font-bold text-black">EquityStreet</span>
+      <Link href="/" className="ml-3 text-5xl font-test font-bold text-black">EquityStreet</Link>
       {/*<Image className="h-20 w-auto" src="/doodoo.png" alt="Your Company" width={700} height={800} />*/}
     </div>
-  </a>
+  </div>
 </div>
 
         <div className="flex lg:hidden">
@@ -57,13 +57,13 @@ export default function Homenav() {
               </Popover.Panel>
             </Transition>
           </Popover>
-          <Link href='/aboutme' className="text-3xl font-bold font-bold font-test text-gray-900 dark:text-black hover:underline decoration-sky-600 hover:decoration-blue-400 ">
+          <Link href='/whoweare' className="text-3xl font-bold font-bold font-test text-gray-900 dark:text-black hover:underline decoration-sky-600 hover:decoration-blue-400 ">
             Who we are
           </Link>
-          <Link href='/aboutme' className="text-3xl font-bold font-test text-gray-900 dark:text-black hover:underline decoration-sky-600 hover:decoration-blue-400 ">
+          <Link href='/whatwedo' className="text-3xl font-bold font-test text-gray-900 dark:text-black hover:underline decoration-sky-600 hover:decoration-blue-400 ">
             What we do
           </Link>
-          <Link href='/aboutme' className="text-3xl font-bold font-test text-gray-900 dark:text-black hover:underline decoration-sky-600 hover:decoration-blue-400 ">
+          <Link href='/whoweassist' className="text-3xl font-bold font-test text-gray-900 dark:text-black hover:underline decoration-sky-600 hover:decoration-blue-400 ">
             Who we assist
           </Link>
           <Link href='/aboutme' className="text-3xl font-bold font-test text-gray-900 dark:text-black hover:underline decoration-sky-600 hover:decoration-blue-400 ">
@@ -73,10 +73,11 @@ export default function Homenav() {
             Talk to us
           </Link>
         </Popover.Group>
+        
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <button className="text-2xl text-white bg-gray-800 font-test hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-2xl px-8 py-3 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
+          <Link href="/login" className="text-2xl text-white bg-gray-800 font-test hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-2xl px-8 py-3 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
           Login <span aria-hidden="true"></span>
-          </button>       </div>
+          </Link> </div>
       </nav>
       <Dialog as="div" className="lg:hidden bg-gray-50 dark:bg-gray-800" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10 bg-gray-50 dark:bg-gray-800" />

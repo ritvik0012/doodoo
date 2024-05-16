@@ -16,15 +16,15 @@ export default function Services (){
         name: 'PERSONALIZED FINANCIAL PLANNING',
         description: (
             <ul className="space-y-4 text-left ml-15 text-white dark:text-white">
-            <li className="items-center">
+            <li className="items-center text-justify">
             <span className="text-3xl before:content-['>'] text-bold text-achu"></span>  
                 <span className="pl-2">Personalized financial planning services  to meet  specific financial life goals</span>
             </li>
-            <li className="items-center">
+            <li className="items-center text-justify">
             <span className="text-3xl before:content-['>'] text-bold text-achu"></span> 
                 <span className="pl-2"> Customized & well structured financial models based on  life goals, disciplined approach and client risk profile.</span>
             </li>
-            <li className="items-center">
+            <li className="items-center text-justify">
             <span className="text-3xl before:content-['>'] text-bold text-achu"></span> 
                 <span className="pl-2">  Strategic asset allocation methodology with  tactical asset allocation adapting to market dynamism to maximize rewards with minimum risk.</span>
             </li>
@@ -37,13 +37,13 @@ export default function Services (){
         description: (
             <ul className="space-y-4 text-left ml-15 text-white dark:text-white">
             <li className="items-center">
-                <span className="text-3xl before:content-['>'] text-bold text-achu"></span>  <span className="pl-2">Client specific financial asset management services to create long term client wealth.</span>
+                <span className="text-3xl before:content-['>'] text-bold text-achu"></span>  <span className="pl-2">Client specific financial asset services to create long term client wealth.</span>
             </li>
-            <li className="items-center">
+            <li className="items-center text-justify">
     
             <span className="text-3xl before:content-['>'] text-bold text-achu"></span>  <span className="pl-2">  Client specific asset allocation & equity diversification to optimise risk return reward  </span>
             </li>
-            <li className="items-center">
+            <li className="items-center text-justify">
 
             <span className="text-3xl before:content-['>'] text-bold text-achu"></span>  <span className="pl-2">Client specific equity portfolio models and continuous monitoring & rebalancing as required. </span>
             </li>
@@ -55,15 +55,15 @@ export default function Services (){
         name: 'RETIREMENT PLANNING',
         description: (
             <ul className="space-y-4 text-left mt-5 ml-15 text-white dark:text-white">
-            <li className="items-center">
+            <li className="items-center text-justify">
             <span className="text-3xl before:content-['>'] text-bold text-achu"></span> 
-                <span className="pl-2">  Customized financial planning and strategies ensuring financial security during happy retired years.</span>
+                <span className="pl-2">  Customized retirement planning and strategies ensuring financial security during happy retired years.</span>
             </li>
-            <li className="items-center">
+            <li className="items-center text-justify">
             <span className="text-3xl before:content-['>'] text-bold text-achu"></span> 
                 <span className="pl-2">  Suitable asset allocation and investment diversification as per client risk profile.</span>
             </li>
-            <li className="items-center">
+            <li className="items-center text-justify">
             <span className="text-3xl before:content-['>'] text-bold text-achu"></span> 
                 <span className="pl-2">  Experience magic of compounding by starting early.</span>
             </li>
@@ -75,15 +75,15 @@ export default function Services (){
         name: 'INVESTMENT ADVISORY SERVICES',
         description: (
             <ul className="space-y-4 text-left ml-15 text-white dark:text-white">
-            <li className="items-center">
+            <li className="items-center text-justify">
             <span className="text-3xl before:content-['>'] text-bold text-achu"></span> 
                 <span className="pl-2">  Comprehensive advice and report tailored to specific investment decision requirements of clients.</span>
             </li>
-            <li className="items-center">
+            <li className="items-center text-justify">
             <span className="text-3xl before:content-['>'] text-bold text-achu"></span> 
                 <span className="pl-2">  Advice and optimization of specific equity and mutual fund portfolios.</span>
             </li>
-            <li className="items-center">
+            <li className="items-center text-justify">
             <span className="text-3xl before:content-['>'] text-bold text-achu"></span> 
                 <span className="pl-2">  Advice on financial assessment of new projects and investment decisions.</span>
             </li>
@@ -107,7 +107,7 @@ export default function Services (){
             {/*<Image src={service.image} height={80} width={80} alt={service.name} />*/}
             </div>
             <h4 className="mt-1 text-3xl text-orange-400 font-semibold">{service.name}</h4>
-            <div className="mt-4 text-2xl text-justify">{service.description}</div>
+            <div className="mt-4 text-xl text-justify">{service.description}</div>
           </div>
         ))}
       </div>
