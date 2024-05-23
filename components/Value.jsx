@@ -31,18 +31,6 @@ export default function Value({result,data}) {
           </div>
         ) : (
           <>
-          <div className="mb-5">
-          <label htmlFor="datePicker" className="block text-sm font-medium text-gray-700 dark:text-gray-200">Select Date:</label>
-          <input
-            type="date"
-            id="datePicker"
-            name="datePicker"
-            value={selectedDate}
-            onChange={handleDateChange}
-            className="mt-1 block w-130 h-8  border-gray-300 shadow-sm sm:text-sm rounded-md text-black"
-          />
-        </div>
-        {selectedDate}
           <table className="min-w-full table-auto text-gray-900 dark:text-white">
             <tbody>
               {data.map((row, index) => (

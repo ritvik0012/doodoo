@@ -24,7 +24,7 @@ export default function Homenav() {
       <div className="flex lg:flex-1 items-center">
   <div className="flex items-center -m-1.5 p-1.5">
     <div className="flex items-center">
-      <Link href="/" className="ml-3 text-4xl font-test font-bold text-black">EQUITYSTREET</Link>
+      <Link href="/" className="ml-3 text-4xl font-test font-bold text-black">EQUITYSTREET <br/><div className="text-[1.375rem]">I n v e s t m e n t&nbsp;&nbsp;&nbsp;A d v i s o r</div></Link>
       {/*<Image className="h-20 w-auto" src="/doodoo.png" alt="Your Company" width={700} height={800} />*/}
     </div>
   </div>
@@ -66,10 +66,10 @@ export default function Homenav() {
           <Link href='/whoweassist' className="text-3xl font-bold font-test text-gray-900 dark:text-black hover:underline decoration-sky-600 hover:decoration-gray-800 ">
             Who we assist
           </Link>
-          <Link href='/aboutme' className="text-3xl font-bold font-test text-gray-900 dark:text-black hover:underline decoration-sky-600 hover:decoration-gray-800">
-            Contact
+          <Link href='/contactus' className="text-3xl font-bold font-test text-gray-900 dark:text-black hover:underline decoration-sky-600 hover:decoration-gray-800">
+            Contact us
           </Link>
-          <Link href='/aboutme' className="text-3xl font-bold font-test text-gray-900 dark:text-black hover:underline decoration-sky-600 hover:decoration-gray-800">
+          <Link href='/talktous' className="text-3xl font-bold font-test text-gray-900 dark:text-black hover:underline decoration-sky-600 hover:decoration-gray-800">
             Talk to us
           </Link>
         </Popover.Group>
@@ -124,14 +124,14 @@ export default function Homenav() {
                 <div
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 w-40 hover:bg-gray-700 text-center"
                 >
-                  <Link href="/login">
-                  CONTACT
+                  <Link href="/contactus">
+                  CONTACT US
                   </Link>
                 </div>
                 <div
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 w-40 hover:bg-gray-700 text-center"
                 >
-                  <Link href="/login">
+                  <Link href="/talktous">
                   TALK TO US
                   </Link>
                 </div>

@@ -20,7 +20,7 @@ export default function Home({result,data}) {
     return (
         <>
         <Navbar admin={result.isAdmin}/>
-        <div className="flex flex-col md:flex-row min-h-screen">
+        <div className="flex flex-col md:flex-row min-h-screen bg-gray-900">
       <Sidebar setPortfolio={setPortfolio} setDashboard={setDashboard}/>
       <div className="flex-1">
         {portfolio && <Value data={data} />}

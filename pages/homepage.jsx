@@ -3,6 +3,7 @@ import About from '../components/Aboutme'
 import Services from '../components/Services'
 import Testcomponent from '../components/Testcomponent'
 import Whatwedo from '../components/Whatwedo'
+import Talk from '../components/Talk'
 import Contact from '../components/Contact'
 import {useEffect} from 'react'
 export default function Homepage() {
@@ -15,6 +16,8 @@ export default function Homepage() {
         <About />
         <Whatwedo />
         <Services/>
+        <Talk />
+        <Contact />
         </div>
     )
 }
