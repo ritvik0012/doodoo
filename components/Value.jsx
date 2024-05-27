@@ -25,13 +25,8 @@ export default function Value({result,data}) {
   return(
     <>
       <div className="overflow-x-auto p-10 bg-gray-50 dark:bg-gray-800">
-        {isLoading ? (
-          <div className="flex justify-center items-center">
-            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900 dark:border-white"></div>
-          </div>
-        ) : (
           <>
-          <table className="min-w-full table-auto text-gray-900 dark:text-white">
+          <table className="min-w-full table-auto text-gray-900 dark:bg-gray-800 dark:text-white">
             <tbody>
               {data.map((row, index) => (
                 index === 0 ? (
@@ -41,7 +36,7 @@ export default function Value({result,data}) {
                     ))}
                   </tr>
                 ) : (
-                  <tr key={index} className={`${index % 2 === 0 ? 'bg-gray-100 dark:bg-gray-700' : 'bg-white dark:bg-gray-800'}`}>
+                  <tr key={index} className={`${index % 2 === 0 ? 'dark:bg-gray-700' : 'dark:bg-gray-800'}`}>
                     {row.map((cell, cellIndex) => (
                       <td key={cellIndex} className="border px-4 py-2">{cell}</td>
                     ))}
@@ -51,7 +46,6 @@ export default function Value({result,data}) {
             </tbody>
           </table>
           </>
-        )}
       </div>
     </>
   );

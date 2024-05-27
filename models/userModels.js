@@ -31,6 +31,16 @@ const userSchema = new mongoose.Schema({
         required: true,
         default: "documentId"
     },
+    assetId: {
+        type: String,
+        required: true,
+        default: "assetId"
+    },
+    stockId: {
+        type: String,
+        required: true,
+        default: "stockId"
+    },
     portfolio: {
         type: [portfolioSchema],
         required: true

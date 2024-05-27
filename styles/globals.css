@@ -5,4 +5,4 @@
 @tailwind utilities;
 
 body{  background-color: #ffbd59;  color: #fff;}
-body[class*=language-],body.dark table tbody>tr:nth-child(odd)>td,body.dark table tbody>tr:nth-child(odd)>th {  background: #ffbd59}
+body[class*=language-],body.dark table tbody>tr:nth-child(odd)>td,body.dark table tbody>tr:nth-child(odd)>th {}

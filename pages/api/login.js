@@ -17,7 +17,7 @@ export default async function handler (req,res) {
     else {
         const compare = await bcrypt.compare(password,doesUserExist.password);
         if(compare){
-            const token = jwt.sign({username: doesUserExist.username, email: doesUserExist.email, isAdmin: doesUserExist.isAdmin, documentId: doesUserExist.documentId}, "secret");
+            const token = jwt.sign({username: doesUserExist.username, email: doesUserExist.email, isAdmin: doesUserExist.isAdmin, documentId: doesUserExist.documentId, stockId: doesUserExist.stockId, assetId: doesUserExist.assetId}, "secret");
             const cookieOptions = {
                 httpOnly: true,
                 secure: process.env.NODE_ENV !== 'development',
