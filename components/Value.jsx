@@ -12,8 +12,9 @@ export default function Value({result,data}) {
     setSelectedDate(event.target.value);
   };
   useEffect(() => { 
+    const domainName = process.env.DOMAIN
     const fetchToken = async () => {
-      const response = await fetch('/api/token');
+      const response = await fetch(`${domainName}/api/token`);
       const result = await response.json();
       setDocumentId(result.documentId);
       setIsAdmin(result.isAdmin)

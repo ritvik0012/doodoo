@@ -42,7 +42,8 @@ export default function Admin({users}) {
     )
 }
 export async function getServerSideProps(context) {
-  const res = await fetch('/api/users')
+  const domainName = process.env.DOMAIN
+  const res = await fetch(`${domainName}/api/users`)
   const data = await res.json()
   const users = data.filter(user => !user.isAdmin)
   return {props: {users}}

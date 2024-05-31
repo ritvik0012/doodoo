@@ -57,7 +57,8 @@ else{
   assetId = result.assetId
   stockId = result.stockId
 }
-const response = await fetch('/api/stock', {
+const domainName = process.env.DOMAIN
+const response = await fetch(`${domainName}/api/stock`, {
   method: 'POST', // Use POST method to send data in the request body
   headers: {
     'Content-Type': 'application/json',
