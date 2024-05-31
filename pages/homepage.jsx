@@ -7,9 +7,6 @@ import Talk from '../components/Talk'
 import Contact from '../components/Contact'
 import {useEffect} from 'react'
 export default function Homepage() {
-    useEffect(() => {
-        document.body.classList.add("dark");
-    })
     return (
         <div className="bg-achu">
         <Homenav />

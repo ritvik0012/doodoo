@@ -4,4 +4,3 @@
 @tailwind components;
 @tailwind utilities;
 
-body[class*=language-],body.dark table tbody>tr:nth-child(odd)>td,body.dark table tbody>tr:nth-child(odd)>th {}
