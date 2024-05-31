@@ -11,7 +11,7 @@ export default function Homepage() {
         document.body.classList.add("dark");
     })
     return (
-        <div>
+        <div className="bg-achu">
         <Homenav />
         <About />
         <Whatwedo />
