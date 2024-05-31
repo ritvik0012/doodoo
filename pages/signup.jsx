@@ -16,7 +16,7 @@ export default function Signup() {
             window.alert('Invalid email format');
         }
         else {
-            axios.post("http://localhost:3000/api/signup" ,{email: email, password: password, username: username})
+            axios.post("api/signup" ,{email: email, password: password, username: username})
             .then((response) => {
                 console.log(response.data.message)
                 if(response.data.message === "success"){

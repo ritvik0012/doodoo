@@ -57,7 +57,7 @@ else{
   assetId = result.assetId
   stockId = result.stockId
 }
-const response = await fetch('http://localhost:3000/api/stock', {
+const response = await fetch('api/stock', {
   method: 'POST', // Use POST method to send data in the request body
   headers: {
     'Content-Type': 'application/json',
