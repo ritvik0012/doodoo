@@ -18,7 +18,7 @@ export default function Services (){
         image: '/nri.png',
       },
       {
-        name: 'BUSY ENTREPENEURS',
+        name: 'ENTREPENEURS',
         description: 'Seeking financial advice to manage their financial assets by optimizing risk reward and asset allocation strategies.',
         image: '/busy.png',
       },
@@ -48,7 +48,7 @@ export default function Services (){
             {/*<Image src={service.image} height={80} width={80} alt={service.name} />*/}
             </div>
             <h4 className="mt-1 text-3xl text-orange-400 font-semibold">{service.name}</h4>
-            <div className="mt-4 text-xl text-justify">{service.description}</div>
+            <div className="mt-4 text-xl text-justify text-white">{service.description}</div>
           </div>
         ))}
       </div>

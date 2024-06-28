@@ -25,21 +25,21 @@ export default function Value({result,data}) {
 
   return(
     <>
-      <div className="overflow-x-auto p-10 bg-gray-50 dark:bg-gray-800">
+      <div className="overflow-x-auto p-10 bg-gray-50 bg-gray-800">
           <>
-          <table className="min-w-full table-auto text-gray-900 dark:bg-gray-800 dark:text-white">
+          <table className="min-w-full table-auto text-gray-900 bg-gray-800 text-white">
             <tbody>
               {data.map((row, index) => (
                 index === 0 ? (
                   <tr key={index}>
                     {row.map((cell, cellIndex) => (
-                      <th key={cellIndex} className="border px-4 py-2">{cell}</th>
+                      <th key={cellIndex} className="border px-4 py-2 text-sm">{cell}</th>
                     ))}
                   </tr>
                 ) : (
                   <tr key={index} className={`${index % 2 === 0 ? 'dark:bg-gray-700' : 'dark:bg-gray-800'}`}>
                     {row.map((cell, cellIndex) => (
-                      <td key={cellIndex} className="border px-4 py-2">{cell}</td>
+                      <td key={cellIndex} className="border px-4 py-2 text-sm">{cell}</td>
                     ))}
                   </tr>
                 )
