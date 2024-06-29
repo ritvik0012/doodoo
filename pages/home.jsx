@@ -29,7 +29,7 @@ export default function Home({result,data,data1,data2}) {
         {asset && <Value data={data1} />}
         {stock && <Value data={data2}/>}
         {dashboard && (
-    <h1 className="text-4xl text-center text-white font-bold animate-pulse">
+    <h1 className="text-4xl text-center text-gray=900 font-bold animate-pulse">
       {dashBoardValue}
     </h1>
 

@@ -33,13 +33,13 @@ export default function Value({result,data}) {
                 index === 0 ? (
                   <tr key={index}>
                     {row.map((cell, cellIndex) => (
-                      <th key={cellIndex} className="border px-4 py-2 text-sm">{cell}</th>
+                      <th key={cellIndex} className="border px-4 py-2 text-xs">{cell}</th>
                     ))}
                   </tr>
                 ) : (
                   <tr key={index} className={`${index % 2 === 0 ? 'dark:bg-gray-700' : 'dark:bg-gray-800'}`}>
                     {row.map((cell, cellIndex) => (
-                      <td key={cellIndex} className="border px-4 py-2 text-sm">{cell}</td>
+                      <td key={cellIndex} className="border px-4 py-2 text-xs">{cell}</td>
                     ))}
                   </tr>
                 )
