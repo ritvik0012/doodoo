@@ -16,10 +16,10 @@ export default function Talk(){
         <figcaption class="flex items-center space-x-4">
         <img src="/profile.jpg" class="flex-none w-20 h-20 rounded-full object-cover" loading="lazy" decoding="async" />
             <div class="flex-auto">
-                <div class="text-slate-900 text-3xl font-semibold dark:text-slate-200">
+                <div class="text-slate-900 text-3xl font-semibold text-white">
                     THANGARAJU MAHESH
                 </div>
-                <div class="mt-0.5 text-xl dark:text-slate-300">
+                <div class="mt-0.5 text-xl text-white">
                     Investment Advisor
                 </div>
                 </div>
@@ -42,6 +42,7 @@ With a deep-rooted passion for investments and a proven track record of success,
       </svg>
       <div class="absolute top-full left-0 w-full h-full rounded-full bg-blue-500 z-0 transition-all duration-500 group-hover:top-0"></div>
       </button>
+      <a href="https://www.linkedin.com/in/mahesh-thangaraju-9305a710/">
       <button class="w-20 h-20 flex items-center relative overflow-hidden justify-center rounded-full bg-white shadow-md shadow-gray-200 group transition-all duration-300">
       <svg class="fill-gray-900 relative z-10 transition-all duration-300 group-hover:fill-white"  xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 72 72" fill="none">
       <path d="M24.7612 55.999V28.3354H15.5433V55.999H24.7621H24.7612ZM20.1542 24.5591C23.3679 24.5591 25.3687 22.4348 25.3687 19.7801C25.3086 17.065 23.3679 15 20.2153 15C17.0605 15 15 17.065 15 19.7799C15 22.4346 17.0001 24.5588 20.0938 24.5588H20.1534L20.1542 24.5591ZM29.8633 55.999H39.0805V40.5521C39.0805 39.7264 39.1406 38.8985 39.3841 38.3088C40.0502 36.6562 41.5668 34.9455 44.1138 34.9455C47.4484 34.9455 48.7831 37.4821 48.7831 41.2014V55.999H58V40.1376C58 31.6408 53.4532 27.6869 47.3887 27.6869C42.4167 27.6869 40.233 30.4589 39.0198 32.347H39.0812V28.3364H29.8638C29.9841 30.9316 29.8631 56 29.8631 56L29.8633 55.999Z" 
@@ -49,6 +50,8 @@ With a deep-rooted passion for investments and a proven track record of success,
       </svg>
       <div class="absolute top-full left-0 w-full h-full rounded-full bg-[#006699] z-0 transition-all duration-500 group-hover:top-0"></div>
       </button>
+      </a>
+      <a href="https://wa.me/9629484649">
       <button class="w-20 h-20 flex items-center relative overflow-hidden justify-center rounded-full bg-white shadow-md shadow-gray-200 group transition-all duration-300">
       <svg class="fill-gray-900 relative z-10 transition-all duration-300 group-hover:fill-white" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 71 72" fill="none">
       <path
@@ -60,6 +63,7 @@ With a deep-rooted passion for investments and a proven track record of success,
       </svg>
       <div class="absolute top-full left-0 w-full h-full rounded-full bg-green-400 z-0 transition-all duration-500 group-hover:top-0"></div>
       </button>
+      </a>
       </div>
             {/*<button type="button" class="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-lg px-5 py-2.5 text-center me-2 mb-2">Learn more</button>*/}
         </div>
