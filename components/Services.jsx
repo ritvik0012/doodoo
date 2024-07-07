@@ -34,20 +34,20 @@ export default function Services (){
       }]
   return (
     <>
-        <div className='px-4 py-20 mt-15 md:px-20 font-test'>
+        <div className='px-4 py-20 mt-15 md:px-20 font-ubuntu min-h-screen bg-achu'>
       <div className="relative">
-      <h3 className="pl-3 text-6xl font-test font-bold text-gray-900 text-center ">WHO WE <span className="text-bull">ASSIST</span></h3>
+      <h3 className="pl-3 text-6xl font-ubuntu font-bold text-gray-900 text-center ">WHO WE <span className="text-bull">ASSIST</span></h3>
     </div>
       <div className="mt-10 grid gap-8 md:grid-cols-4">
         {services.map((service, index) => (
           <div
             key={index}
-            className={classNames('rounded-2xl py-8 px-4 text-center shadow-md md:px-8 hover:border-zinc-50 border-transparent border-4 hover:shadow-[rgba(0,_0,_0,_0.2)_0px_60px_40px_-7px]', getBackgroundClass(index))}
+            className={classNames('rounded-2xl py-8 px-4 shadow-md md:px-8 hover:border-zinc-50 border-transparent border-4 hover:shadow-[rgba(0,_0,_0,_0.2)_0px_60px_40px_-7px]', getBackgroundClass(index))}
           >
             <div className='flex'>
             {/*<Image src={service.image} height={80} width={80} alt={service.name} />*/}
             </div>
-            <h4 className="mt-1 text-2xl text-orange-400 font-semibold">{service.name}</h4>
+            <h4 className="mt-1 text-xl text-orange-400 font-semibold">{service.name}</h4>
             <div className="mt-4 text-l text-white">{service.description}</div>
           </div>
         ))}

@@ -40,7 +40,7 @@ export default function Login() {
     return (
         <section className="bg-gray-900 min-h-screen">
   <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-      <a href="/" className="flex items-center mb-6 text-5xl font-test font-semibold text-gray-900 text-white">
+      <a href="/" className="flex items-center mb-6 text-5xl font-ubuntu font-semibold text-gray-900 text-white">
          EQUITYSTREET
       </a>
       <div className="w-full rounded-lg shadow dark:border md:mt-10 sm:max-w-md xl:p-0 bg-gray-800 border-gray-700">

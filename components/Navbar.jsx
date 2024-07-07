@@ -35,7 +35,7 @@ export default function Navbar({admin}) {
       <div className="flex lg:flex-1 items-center">
   <a href="#" className="flex items-center -m-1.5 p-1.5">
     <div className="flex items-center">
-      <span className="ml-3 text-3xl font-test font-bold text-white">EQUITYSTREET</span>
+      <span className="ml-3 text-l font-ubuntu font-bold text-white">EQUITYSTREET</span>
       {/*<Image className="h-20 w-auto" src="/doodoo.png" alt="Your Company" width={700} height={800} />*/}
     </div>
   </a>

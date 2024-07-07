@@ -24,7 +24,7 @@ export default function Homenav() {
       <div className="flex lg:flex-1 items-center">
   <div className="flex items-center -m-1.5 p-1.5">
     <div className="flex items-center">
-      <Link href="/" className="ml-3 text-4xl font-test font-bold text-black">EQUITYSTREET <br/><div className="text-[1.375rem]">I n v e s t m e n t&nbsp;&nbsp;&nbsp;A d v i s o r</div></Link>
+      <Link href="/" className="ml-3 text-5xl font-test font-bold text-black">EQUITYSTREET <br/><div className="text-[1.375rem]">SEBI&nbsp;Registered&nbsp;Investment&nbsp;Advisor</div></Link>
       {/*<Image className="h-20 w-auto" src="/doodoo.png" alt="Your Company" width={700} height={800} />*/}
     </div>
   </div>
@@ -57,19 +57,19 @@ export default function Homenav() {
               </Popover.Panel>
             </Transition>
           </Popover>
-          <Link href='/whoweare' className="text-3xl font-bold font-bold font-test text-gray-900 dark:text-black hover:underline decoration-sky-600 hover:decoration-gray-800 ">
+          <Link href='/whoweare' className="text-2xl font-bold font-bold font-test text-gray-900 dark:text-black hover:underline decoration-sky-600 hover:decoration-gray-800 ">
             Who we are
           </Link>
-          <Link href='/whatwedo' className="text-3xl font-bold font-test text-gray-900 dark:text-black hover:underline decoration-sky-600 hover:decoration-gray-800 ">
+          <Link href='/whatwedo' className="text-2xl font-bold font-test text-gray-900 dark:text-black hover:underline decoration-sky-600 hover:decoration-gray-800 ">
             What we do
           </Link>
-          <Link href='/whoweassist' className="text-3xl font-bold font-test text-gray-900 dark:text-black hover:underline decoration-sky-600 hover:decoration-gray-800 ">
+          <Link href='/whoweassist' className="text-2xl font-bold font-test text-gray-900 dark:text-black hover:underline decoration-sky-600 hover:decoration-gray-800 ">
             Who we assist
           </Link>
-          <Link href='/contactus' className="text-3xl font-bold font-test text-gray-900 dark:text-black hover:underline decoration-sky-600 hover:decoration-gray-800">
+          <Link href='/contactus' className="text-2xl font-bold font-test text-gray-900 dark:text-black hover:underline decoration-sky-600 hover:decoration-gray-800">
             Contact us
           </Link>
-          <Link href='/talktous' className="text-3xl font-bold font-test text-gray-900 dark:text-black hover:underline decoration-sky-600 hover:decoration-gray-800">
+          <Link href='/talktous' className="text-2xl font-bold font-test text-gray-900 dark:text-black hover:underline decoration-sky-600 hover:decoration-gray-800">
             Talk to us
           </Link>
         </Popover.Group>

@@ -2,11 +2,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export default function Talk(){
     return (
         <>
-        <div className='px-4 py-20 mt-15 md:px-20 font-test'>
-      <div className="relative">
-      <h3 className="pl-3 text-6xl font-test font-bold text-gray-900 text-center">CONTACT <span className="text-bull">US</span></h3>
+        <div className='px-4 py-20 mt-15 md:px-20 font-ubuntu bg-achu'>
+      <div className="relative"> 
+      <h3 className="pl-3 text-6xl font-ubuntu font-bold text-gray-900 text-center">CONTACT <span className="text-bull">US</span></h3>
     </div>
-    <div className="container sm:flex my-24 mx-auto md:px-6 bg-gradient-to-r from-bull to-gray-900 p-10 rounded-3xl">
+    <div className="container sm:flex my-24 mx-auto md:px-6 bg-gray-900 p-10 rounded-3xl">
     <div className="sm:w-1/3 p-10 mt-10">
             <div className="image object-center text-center rounded-3xl">
                 <img src="/mahesh.jpeg" className="rounded-3xl w-70 h-70" />
@@ -16,19 +16,21 @@ export default function Talk(){
         <figcaption class="flex items-center space-x-4">
         <img src="/profile.jpg" class="flex-none w-20 h-20 rounded-full object-cover" loading="lazy" decoding="async" />
             <div class="flex-auto">
-                <div class="text-slate-900 text-3xl font-semibold text-white">
+                <div class="text-3xl text-orange-400">
                     THANGARAJU MAHESH
                 </div>
-                <div class="mt-0.5 text-xl text-white">
-                    Investment Advisor
+                <div class="mt-0.5 text-xl text-orange-400">
+                    SEBI Registered Investment Advisor
                 </div>
                 </div>
                 </figcaption>
             <div className="text">
-                <p className=" my-4 mt-10 font-semi-bold text-gray-900 font-test text-justify text-2xl text-white">
-                Mahesh is a seasoned professional with over 25 years of industry and investment experience. His passion for investments has not only brought him financial success but has also helped him  retire at the age of 49, allowing his ambition to pursue his investment journey full-time. With a mission to share  his experience of compounding magic in investments, Mahesh is dedicated to helping NRI peers, aspiring early retirees and young professionals cultivate their own investment hunger and achieve financial freedom.
-                <br/><br/>
-With a deep-rooted passion for investments and a proven track record of success, Mahesh is a trusted investment advisor and mentor to those looking to grow their wealth and secure their financial future. As he continues on his entrepreneurial journey, Mahesh remains steadfast in his mission to empower others to take control of their financial destinies and create a life of abundance and freedom through smart investing and prudent financial planning.
+                <p className=" my-4 mt-10 font-regular font-ubuntu text-justify text-xl text-white">
+                Mahesh is a seasoned professional with over 25 years of industry and investment experience. His passion for investments has not only brought him financial freedom but  also helped him   switch over  to  investment career at the age of 49,  allowing his ambition to pursue his investment journey full-time. With a mission to share  his experience of compounding magic in investments, Mahesh is dedicated to helping NRI peers, aspiring early retirees and young professionals cultivate their own investment hunger and achieve financial freedom.
+<br></br><br></br>
+With a deep-rooted passion for investments and a proven track record of success, Mahesh is a trusted investment advisor and mentor to those looking to grow their wealth and secure their financial future. As he continues on his entrepreneurial journey, Mahesh remains steadfast  to empower others to take control of their financial destinies and create a life of abundance and freedom through prudent financial planning and smart investing.
+<br></br><br></br>
+Mahesh holds an MBA in Finance & Operations from S P Jain institute of Management Mumbai (Dubai campus) and also completed level 1 &2 Investment Advisor certification courses from NISM (National Institute of securities market established by SEBI)
 
 
                 </p>

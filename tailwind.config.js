@@ -14,7 +14,8 @@ module.exports = {
       },
       fontFamily: {
         test: ["Cormorant Garamond","sans-serif"],
-        cursive: ["Dancing Script","sans-serif"]
+        cursive: ["Dancing Script","sans-serif"],
+        ubuntu: ["Ubuntu","sans-serif"]
       },
       colors: {
         'achu':'#ffbd59',

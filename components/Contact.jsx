@@ -23,9 +23,9 @@ const Contact = () => {
   }
   return (
     <>
-    <div className='px-4 py-20 mt-15 md:px-20 font-test'>
+    <div className='px-4 py-20 mt-15 md:px-20 font-ubuntu bg-achu'>
       <div className="relative">
-      <h3 className="pl-3 text-6xl font-test font-bold text-gray-900 text-center">TALK TO <span className="text-bull">US</span></h3>
+      <h3 className="pl-3 text-6xl font-ubuntu font-bold text-gray-900 text-center ">TALK TO <span className="text-bull">US</span></h3>
     </div>
 <div className="container my-24 mx-auto md:px-6 bg-gradient-to-r from-gray-800 to-black w-8/12 rounded-3xl">
 <section class="">
