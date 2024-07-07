@@ -2,11 +2,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export default function Talk(){
     return (
         <>
-        <div className='px-4 py-20 mt-15 md:px-20 font-ubuntu bg-achu'>
+        <div className='px-4 py-20 mt-15 sm:px-20 font-ubuntu bg-achu'>
       <div className="relative"> 
       <h3 className="pl-3 text-5xl font-ubuntu font-bold text-gray-900 text-center">CONTACT <span className="text-bull">US</span></h3>
     </div>
-    <div className="container sm:flex my-24 mx-auto md:px-6 bg-gray-900 p-10 rounded-3xl">
+    <div className="container sm:flex my-24 mx-auto sm:px-6 bg-gray-900 p-10 rounded-3xl">
     <div className="sm:w-1/3 p-10 mt-10">
             <div className="image object-center text-center rounded-3xl">
                 <img src="/mahesh.jpeg" className="rounded-3xl w-70 h-70" />

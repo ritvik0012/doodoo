@@ -85,7 +85,7 @@ export default function Services (){
       }]
   return (
     <>
-        <div className='px-4 py-20 mt-15 md:px-20 font-ubuntu bg-achu'>
+        <div className='px-4 py-20 mt-15 sm:px-20 font-ubuntu bg-achu min-w-screen'>
       <div className="relative">
       <h3 className="pl-3 text-5xl font-ubuntu font-bold text-gray-900 text-center">WHAT WE <span className="text-bull">DO</span></h3>
     </div>
@@ -93,7 +93,7 @@ export default function Services (){
         {services.map((service, index) => (
           <div
             key={index}
-            className={classNames('rounded-2xl py-8 px-4 shadow-md md:px-8 hover:border-zinc-50 border-transparent border-4 hover:shadow-[rgba(0,_0,_0,_0.2)_0px_60px_40px_-7px]', getBackgroundClass(index))}
+            className={classNames('rounded-2xl py-8 px-4 shadow-md sm:px-8 hover:border-zinc-50 border-transparent border-4 hover:shadow-[rgba(0,_0,_0,_0.2)_0px_60px_40px_-7px]', getBackgroundClass(index))}
           >
             <div className='flex'>
             {/*<Image src={service.image} height={80} width={80} alt={service.name} />*/}
