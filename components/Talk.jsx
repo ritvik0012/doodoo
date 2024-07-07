@@ -32,10 +32,11 @@ With a deep-rooted passion for investments and a proven track record of success,
 <br></br><br></br>
 Mahesh holds an MBA in Finance & Operations from S P Jain institute of Management Mumbai (Dubai campus) and also completed level 1 &2 Investment Advisor certification courses from NISM (National Institute of securities market established by SEBI).
 <br></br><br></br>
-You can reach Mahesh @ <p className="text-orange-400">mahesh.thangaraju@gmail.com</p>
+You can reach Mahesh @
 
 
                 </p>
+                <p className=" font-regular font-ubuntu text-justify text-xl text-orange-400">mahesh.thangaraju@gmail.com</p>
             </div>
             <div class="w-full mt-10 h-auto py-8 flex items-center justify-center gap-4 flex-wrap">
                 {/*

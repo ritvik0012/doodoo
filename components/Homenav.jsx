@@ -57,19 +57,19 @@ export default function Homenav() {
               </Popover.Panel>
             </Transition>
           </Popover>
-          <Link href='/whoweare' className="text-l text-bold font-ubuntu text-gray-900 dark:text-orange-400 hover:underline decoration-sky-600 hover:decoration-gray-800 ">
+          <Link href='/whoweare' className="text-l text-bold font-ubuntu text-gray-900 text-orange-400 hover:underline decoration-sky-600 hover:decoration-gray-800 ">
             Who we are
           </Link>
-          <Link href='/whatwedo' className="text-l text-bold font-ubuntu text-gray-900 dark:text-orange-400 hover:underline decoration-sky-600 hover:decoration-gray-800 ">
+          <Link href='/whatwedo' className="text-l text-bold font-ubuntu text-gray-900 text-orange-400 hover:underline decoration-sky-600 hover:decoration-gray-800 ">
             What we do
           </Link>
-          <Link href='/whoweassist' className="text-l text-bold font-ubuntu text-gray-900 dark:text-orange-400 hover:underline decoration-sky-600 hover:decoration-gray-800 ">
+          <Link href='/whoweassist' className="text-l text-bold font-ubuntu text-gray-900 text-orange-400 hover:underline decoration-sky-600 hover:decoration-gray-800 ">
             Who we assist
           </Link>
-          <Link href='/contactus' className="text-l text-bold font-ubuntu text-gray-900 dark:text-orange-400 hover:underline decoration-sky-600 hover:decoration-gray-800">
+          <Link href='/contactus' className="text-l text-bold font-ubuntu text-gray-900 text-orange-400 hover:underline decoration-sky-600 hover:decoration-gray-800">
             Contact us
           </Link>
-          <Link href='/talktous' className="text-l text-bold font-ubuntu text-gray-900 dark:text-orange-400 hover:underline decoration-sky-600 hover:decoration-gray-800">
+          <Link href='/talktous' className="text-l text-bold font-ubuntu text-gray-900 text-orange-400 hover:underline decoration-sky-600 hover:decoration-gray-800">
             Talk to us
           </Link>
         </Popover.Group>
