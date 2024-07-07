@@ -44,11 +44,11 @@ export default function Services (){
             key={index}
             className={classNames('rounded-2xl py-8 px-4 text-center shadow-md md:px-8 hover:border-zinc-50 border-transparent border-4 hover:shadow-[rgba(0,_0,_0,_0.2)_0px_60px_40px_-7px]', getBackgroundClass(index))}
           >
-            <div className='flex justify-center '>
+            <div className='flex'>
             {/*<Image src={service.image} height={80} width={80} alt={service.name} />*/}
             </div>
-            <h4 className="mt-1 text-3xl text-orange-400 font-semibold">{service.name}</h4>
-            <div className="mt-4 text-xl text-justify text-white">{service.description}</div>
+            <h4 className="mt-1 text-2xl text-orange-400 font-semibold">{service.name}</h4>
+            <div className="mt-4 text-l text-white">{service.description}</div>
           </div>
         ))}
       </div>
