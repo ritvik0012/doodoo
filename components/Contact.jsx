@@ -25,12 +25,12 @@ const Contact = () => {
     <>
     <div className='px-4 py-20 mt-15 md:px-20 font-ubuntu bg-achu'>
       <div className="relative">
-      <h3 className="pl-3 text-6xl font-ubuntu font-bold text-gray-900 text-center ">TALK TO <span className="text-bull">US</span></h3>
+      <h3 className="pl-3 text-5xl font-ubuntu font-bold text-gray-900 text-center ">TALK TO <span className="text-bull">US</span></h3>
     </div>
 <div className="container my-24 mx-auto md:px-6 bg-gradient-to-r from-gray-800 to-black w-8/12 rounded-3xl">
 <section class="">
   <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-      <p class="mb-8 lg:mb-16 font-light text-center text-white sm:text-2xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
+      <p class="mb-8 lg:mb-16 font-light text-center text-white sm:text-2xl">For any investment advisory requirements please reach out to us as below!</p>
       <div class="space-y-8 text-xl">
           <div>
               <label for="email" class="block mb-2 text-xl font-medium text-gray-900 dark:text-gray-300">Your email</label>

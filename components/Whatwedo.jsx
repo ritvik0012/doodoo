@@ -22,7 +22,7 @@ export default function Services (){
             </li>
             <li className="">
             <span className="text-3xl before:content-['>'] text-bold text-achu"></span> 
-                <span className="pl-2"> Customized & well structured financial models based on  life goals, disciplined approach and client risk profile.</span>
+                <span className="pl-2"> Customized & well structured financial models based on  life goals, client risk profile and financials.</span>
             </li>
             {/*
             <li className="">
@@ -87,7 +87,7 @@ export default function Services (){
     <>
         <div className='px-4 py-20 mt-15 md:px-20 font-ubuntu bg-achu'>
       <div className="relative">
-      <h3 className="pl-3 text-6xl font-ubuntu font-bold text-gray-900 text-center">WHAT WE <span className="text-bull">DO</span></h3>
+      <h3 className="pl-3 text-5xl font-ubuntu font-bold text-gray-900 text-center">WHAT WE <span className="text-bull">DO</span></h3>
     </div>
       <div className="mt-10 grid gap-8 md:grid-cols-4">
         {services.map((service, index) => (

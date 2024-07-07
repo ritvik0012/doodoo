@@ -4,7 +4,7 @@ export default function Talk(){
         <>
         <div className='px-4 py-20 mt-15 md:px-20 font-ubuntu bg-achu'>
       <div className="relative"> 
-      <h3 className="pl-3 text-6xl font-ubuntu font-bold text-gray-900 text-center">CONTACT <span className="text-bull">US</span></h3>
+      <h3 className="pl-3 text-5xl font-ubuntu font-bold text-gray-900 text-center">CONTACT <span className="text-bull">US</span></h3>
     </div>
     <div className="container sm:flex my-24 mx-auto md:px-6 bg-gray-900 p-10 rounded-3xl">
     <div className="sm:w-1/3 p-10 mt-10">
@@ -30,12 +30,15 @@ export default function Talk(){
 <br></br><br></br>
 With a deep-rooted passion for investments and a proven track record of success, Mahesh is a trusted investment advisor and mentor to those looking to grow their wealth and secure their financial future. As he continues on his entrepreneurial journey, Mahesh remains steadfast  to empower others to take control of their financial destinies and create a life of abundance and freedom through prudent financial planning and smart investing.
 <br></br><br></br>
-Mahesh holds an MBA in Finance & Operations from S P Jain institute of Management Mumbai (Dubai campus) and also completed level 1 &2 Investment Advisor certification courses from NISM (National Institute of securities market established by SEBI)
+Mahesh holds an MBA in Finance & Operations from S P Jain institute of Management Mumbai (Dubai campus) and also completed level 1 &2 Investment Advisor certification courses from NISM (National Institute of securities market established by SEBI).
+<br></br><br></br>
+You can reach Mahesh @ <p className="text-orange-400">mahesh.thangaraju@gmail.com</p>
 
 
                 </p>
             </div>
             <div class="w-full mt-10 h-auto py-8 flex items-center justify-center gap-4 flex-wrap">
+                {/*
       <button class="w-20 h-20 flex items-center justify-center relative overflow-hidden rounded-full bg-white shadow-md shadow-gray-200 group transition-all duration-300">
       <svg class="relative z-10 fill-gray-900 transition-all duration-300 group-hover:fill-white" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 72 72" fill="none">
         <path
@@ -50,9 +53,11 @@ Mahesh holds an MBA in Finance & Operations from S P Jain institute of Managemen
       <path d="M24.7612 55.999V28.3354H15.5433V55.999H24.7621H24.7612ZM20.1542 24.5591C23.3679 24.5591 25.3687 22.4348 25.3687 19.7801C25.3086 17.065 23.3679 15 20.2153 15C17.0605 15 15 17.065 15 19.7799C15 22.4346 17.0001 24.5588 20.0938 24.5588H20.1534L20.1542 24.5591ZM29.8633 55.999H39.0805V40.5521C39.0805 39.7264 39.1406 38.8985 39.3841 38.3088C40.0502 36.6562 41.5668 34.9455 44.1138 34.9455C47.4484 34.9455 48.7831 37.4821 48.7831 41.2014V55.999H58V40.1376C58 31.6408 53.4532 27.6869 47.3887 27.6869C42.4167 27.6869 40.233 30.4589 39.0198 32.347H39.0812V28.3364H29.8638C29.9841 30.9316 29.8631 56 29.8631 56L29.8633 55.999Z" 
       fill=""/>
       </svg>
+           
       <div class="absolute top-full left-0 w-full h-full rounded-full bg-[#006699] z-0 transition-all duration-500 group-hover:top-0"></div>
       </button>
       </a>
+      */ }
       <a href="https://wa.me/9629484649">
       <button class="w-20 h-20 flex items-center relative overflow-hidden justify-center rounded-full bg-white shadow-md shadow-gray-200 group transition-all duration-300">
       <svg class="fill-gray-900 relative z-10 transition-all duration-300 group-hover:fill-white" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 71 72" fill="none">

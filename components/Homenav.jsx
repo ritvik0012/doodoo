@@ -24,7 +24,7 @@ export default function Homenav() {
       <div className="flex lg:flex-1 items-center">
   <div className="flex items-center -m-1.5 p-1.5">
     <div className="flex items-center">
-      <Link href="/" className="ml-3 text-5xl font-test font-bold text-black">EQUITYSTREET <br/><div className="text-[1.375rem]">SEBI&nbsp;Registered&nbsp;Investment&nbsp;Advisor</div></Link>
+      <Link href="/" className="ml-3 text-5xl font-test font-bold text-achu">EQUITYSTREET <br/><div className="text-[1.375rem]">SEBI&nbsp;Registered&nbsp;Investment&nbsp;Advisor</div></Link>
       {/*<Image className="h-20 w-auto" src="/doodoo.png" alt="Your Company" width={700} height={800} />*/}
     </div>
   </div>
@@ -57,25 +57,25 @@ export default function Homenav() {
               </Popover.Panel>
             </Transition>
           </Popover>
-          <Link href='/whoweare' className="text-2xl font-bold font-bold font-test text-gray-900 dark:text-black hover:underline decoration-sky-600 hover:decoration-gray-800 ">
+          <Link href='/whoweare' className="text-l text-bold font-ubuntu text-gray-900 dark:text-orange-400 hover:underline decoration-sky-600 hover:decoration-gray-800 ">
             Who we are
           </Link>
-          <Link href='/whatwedo' className="text-2xl font-bold font-test text-gray-900 dark:text-black hover:underline decoration-sky-600 hover:decoration-gray-800 ">
+          <Link href='/whatwedo' className="text-l text-bold font-ubuntu text-gray-900 dark:text-orange-400 hover:underline decoration-sky-600 hover:decoration-gray-800 ">
             What we do
           </Link>
-          <Link href='/whoweassist' className="text-2xl font-bold font-test text-gray-900 dark:text-black hover:underline decoration-sky-600 hover:decoration-gray-800 ">
+          <Link href='/whoweassist' className="text-l text-bold font-ubuntu text-gray-900 dark:text-orange-400 hover:underline decoration-sky-600 hover:decoration-gray-800 ">
             Who we assist
           </Link>
-          <Link href='/contactus' className="text-2xl font-bold font-test text-gray-900 dark:text-black hover:underline decoration-sky-600 hover:decoration-gray-800">
+          <Link href='/contactus' className="text-l text-bold font-ubuntu text-gray-900 dark:text-orange-400 hover:underline decoration-sky-600 hover:decoration-gray-800">
             Contact us
           </Link>
-          <Link href='/talktous' className="text-2xl font-bold font-test text-gray-900 dark:text-black hover:underline decoration-sky-600 hover:decoration-gray-800">
+          <Link href='/talktous' className="text-l text-bold font-ubuntu text-gray-900 dark:text-orange-400 hover:underline decoration-sky-600 hover:decoration-gray-800">
             Talk to us
           </Link>
         </Popover.Group>
         
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link href="/login" className="text-2xl text-white bg-gray-800 font-test hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-2xl px-8 py-3 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
+          <Link href="/login" className="text-2xl text-white bg-gray-800 font-test hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-2xl px-4 py-3 me-2 mb-1 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
           Login <span aria-hidden="true"></span>
           </Link> </div>
       </nav>

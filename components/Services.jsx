@@ -18,7 +18,7 @@ export default function Services (){
         image: '/nri.png',
       },
       {
-        name: 'ENTREPENEURS',
+        name: 'ENTREPRENEURS',
         description: 'Seeking financial advice to manage their financial assets by optimizing risk reward and asset allocation strategies.',
         image: '/busy.png',
       },
@@ -36,7 +36,7 @@ export default function Services (){
     <>
         <div className='px-4 py-20 mt-15 md:px-20 font-ubuntu min-h-screen bg-achu'>
       <div className="relative">
-      <h3 className="pl-3 text-6xl font-ubuntu font-bold text-gray-900 text-center ">WHO WE <span className="text-bull">ASSIST</span></h3>
+      <h3 className="pl-3 text-5xl font-ubuntu font-bold text-gray-900 text-center ">WHO WE <span className="text-bull">ASSIST</span></h3>
     </div>
       <div className="mt-10 grid gap-8 md:grid-cols-4">
         {services.map((service, index) => (
