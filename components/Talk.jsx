@@ -14,7 +14,7 @@ export default function Talk(){
         </div>
         <div className="sm:w-2/3 p-5 mt-10">
         <figcaption class="flex items-center space-x-4">
-        <img src="/profile.jpg" class="flex-none w-20 h-20 rounded-full object-cover" loading="lazy" decoding="async" />
+        {/*<img src="/profile.jpg" class="flex-none w-20 h-20 rounded-full object-cover" loading="lazy" decoding="async" />*/}
             <div class="flex-auto">
                 <div class="text-3xl text-orange-400">
                     THANGARAJU MAHESH
