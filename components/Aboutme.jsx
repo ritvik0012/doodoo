@@ -13,7 +13,7 @@ export default function About(){
                 <h1 className="my-4 font-ubuntu text-gray-900 font-bold text-5xl ">WHO WE <span className="text-bull">ARE</span>
                 </h1> 
                 <p className=" my-4 mt-10 font-semi-bold text-gray-900 font-ubuntu text-justify text-2xl">
-                We are Equity Street Investment Advisor, a financial investment advisory firm based in Bangalore. We offer personalized financial planning and advisory services to a diverse range of clients including Non Resident Indians, Entrepreneurs,  HNW Individuals and young professionals seeking expert financial advice.
+                We are Equity Street Investment Advisor, a SEBI registered financial investment advisory firm based in Bangalore. We offer personalized financial planning and advisory services to a diverse range of clients including Non Resident Indians, Entrepreneurs,  HNW Individuals and young professionals seeking expert financial advice.
 
                 <br/><br/>
 Equity Street Investment Advisor was founded with a vision to provide customer specific financial plans and solutions to individuals looking to  grow, diversify and preserve their wealth. We focus on personalized services and a client-centric approach to build long-lasting relationships with our clients based on trust, transparency, confidence and exceptional service.

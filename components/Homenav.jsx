@@ -75,7 +75,7 @@ export default function Homenav() {
         </Popover.Group>
         
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link href="/login" className="text-2xl text-white bg-gray-800 font-test hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-2xl px-4 py-3 me-2 mb-1 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
+          <Link href="/login" className="text-xl text-achu bg-gray-800 font-ubuntu hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-2xl px-4 py-3 me-2 mb-1 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
           Login <span aria-hidden="true"></span>
           </Link> </div>
       </nav>
