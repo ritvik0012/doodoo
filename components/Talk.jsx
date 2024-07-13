@@ -25,7 +25,7 @@ export default function Talk(){
                 </div>
                 </figcaption>
             <div className="text">
-                <p className=" my-4 mt-10 font-regular font-ubuntu text-justify text-xl text-white">
+                <p className=" my-4 mt-10 font-regular font-ubuntu text-xl text-white">
                 Mahesh is a seasoned professional with over 25 years of industry and investment experience. His passion for investments has not only brought him financial freedom but  also helped him   switch over  to  investment career at the age of 49,  allowing his ambition to pursue his investment journey full-time. With a mission to share  his experience of compounding magic in investments, Mahesh is dedicated to helping NRI peers, aspiring early retirees and young professionals cultivate their own investment hunger and achieve financial freedom.
 <br></br><br></br>
 With a deep-rooted passion for investments and a proven track record of success, Mahesh is a trusted investment advisor and mentor to those looking to grow their wealth and secure their financial future. As he continues on his entrepreneurial journey, Mahesh remains steadfast  to empower others to take control of their financial destinies and create a life of abundance and freedom through prudent financial planning and smart investing.

@@ -12,7 +12,7 @@ export default function About(){
                 {/*<span className="text-gray-500 border-b-2 border-indigo-600 uppercase">About us</span>*/}
                 <h1 className="my-4 font-ubuntu text-gray-900 font-bold text-5xl ">WHO WE <span className="text-bull">ARE</span>
                 </h1> 
-                <p className=" my-4 mt-10 font-semi-bold text-gray-900 font-ubuntu text-justify text-2xl">
+                <p className=" my-4 mt-10 font-semi-bold text-gray-900 font-ubuntu text-2xl">
                 We are Equity Street Investment Advisor, a SEBI registered financial investment advisory firm based in Bangalore. We offer personalized financial planning and advisory services to a diverse range of clients including Non Resident Indians, Entrepreneurs,  HNW Individuals and young professionals seeking expert financial advice.
 
                 <br/><br/>

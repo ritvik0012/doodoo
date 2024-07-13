@@ -14,13 +14,36 @@ export default async function handler(req,res){
         subject: req.body.subject,
         text: 'Message from ' + req.body.email + '. \nQuery: ' + req.body.message,
       }
+      /*
       transporter.sendMail(mailOptions, function(error,info) {
         if(error){
           console.log(error);
         }
         else{
           console.log('Email sent: ' + info.response);
+          return res.status(200).json({message: "success"});
         }
       })
-    return res.status(200).json({message: "success"});
+        */
+      try {	   
+        await nodemailer
+          .createTransport({
+            service: 'gmail',
+            auth: {
+              user: 'ritvik0012@gmail.com',
+              pass: process.env.MAIL_PASSWORD,
+            },
+          })
+          .sendMail({
+            from: 'ritvik0012@gmail.com',
+            to: 'preetamahesh@gmail.com',
+            subject: req.body.subject,
+           text: 'Message from ' + req.body.email + '. \nQuery: ' + req.body.message,
+          })
+        console.log('Email sent to pree')
+        return res.status(200).json({message: "success"});
+      } catch (e) {
+        console.error(e)
+      }
+    return res.status(200).json({message: "NOT success"});
 }
