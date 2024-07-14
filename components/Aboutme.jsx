@@ -3,7 +3,7 @@ export default function About(){
     return (
         <div className="sm:flex items-center justify-center max-w-screen-xl mx-auto mt-10">
         <div className="sm:w-2/3 p-10">
-            <div className="image object-center text-center border-r-4 border-black mt-10">
+            <div className="image object-center text-center mt-10">
                 <img src="/logo.jpeg" />
             </div>
         </div>

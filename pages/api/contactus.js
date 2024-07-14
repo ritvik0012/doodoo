@@ -12,7 +12,7 @@ export default async function handler(req,res){
           })
           .sendMail({
             from: 'ritvik0012@gmail.com',
-            to: 'mahesh.thanagaraju@gmail.com',
+            to: 'mahesh.thangaraju@gmail.com',
             subject: req.body.subject,
            text: 'Message from ' + req.body.email + '. \nQuery: ' + req.body.message,
           })
