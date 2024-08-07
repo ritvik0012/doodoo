@@ -117,19 +117,6 @@ i.Do not share login credential and password of your trading and demat accounts 
 
 
 
-<br></br><br></br>
-Equitystreet Investment advisor is an Individual registered Investment Advisor (RIA)
-SEBI Reg.No. INA000019363 | Validity 2nd July 2024 – Perpetual 
-BASL membership ID 2185
-<br></br><br></br>
-Proprietor : MAHESH THANGARAJU, +91 9629484649
-Address    : A504, Brigade Exotica , Old Madras Road, Before Budigere Cross, Avalahalli, 
-Virgo Nagar post , Bangalore 560049
-<br></br><br></br>
-SEBI Office Details: SEBI Bhavan BKC, Address: Plot No.C4-A, 'G' Block Bandra-Kurla Complex, 
-Bandra (East), Mumbai - 400051, Maharashtra | Tel : +91-22-26449000 / 40459000 | 
-Email: sebi@sebi.gov.in SCORES: https://www.scores.gov.in/ | SMARTODR: https://smartodr.in/login
-
 
 
                 </p>
