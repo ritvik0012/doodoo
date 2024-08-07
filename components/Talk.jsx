@@ -17,7 +17,7 @@ export default function Talk(){
         {/*<img src="/profile.jpg" class="flex-none w-20 h-20 rounded-full object-cover" loading="lazy" decoding="async" />*/}
             <div class="flex-auto">
                 <div class="text-3xl text-orange-400">
-                    THANGARAJU MAHESH
+                    MAHESH THANGARAJU
                 </div>
                 <div class="mt-0.5 text-xl text-orange-400">
                     SEBI Registered Investment Advisor

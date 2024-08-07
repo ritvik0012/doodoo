@@ -1,3 +1,4 @@
+
 export default function About(){
     /*<div className = "bg-[url('/bg.jpg')]">*/
     return (

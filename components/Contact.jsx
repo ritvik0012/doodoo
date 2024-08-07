@@ -23,7 +23,7 @@ const Contact = () => {
   }
   return (
     <>
-    <div className='px-4 py-20 mt-15 sm:px-20 font-ubuntu bg-achu'>
+    <div className='px-4 py-20 mt-15  font-ubuntu bg-achu'>
       <div className="relative">
       <h3 className="pl-3 text-5xl font-ubuntu font-bold text-gray-900 text-center ">TALK TO <span className="text-bull">US</span></h3>
     </div>

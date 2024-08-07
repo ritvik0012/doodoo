@@ -5,6 +5,7 @@ import Testcomponent from '../components/Testcomponent'
 import Whatwedo from '../components/Whatwedo'
 import Talk from '../components/Talk'
 import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 import {useEffect} from 'react'
 export default function Homepage() {
     return (
@@ -15,6 +16,7 @@ export default function Homepage() {
         <Services/>
         <Talk />
         <Contact />
+        <Footer />
         </div>
     )
 }
