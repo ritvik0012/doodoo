@@ -10,7 +10,7 @@ export default function Investment(){
     <div className="container sm:flex my-24 mx-auto sm:px-6 bg-gray-900 p-10 rounded-3xl">
         <div className="p-5 ">
             <div className="text">
-                <p className=" my-4 mt-10 font-regular font-ubuntu text-xl text-white">
+                <div className=" my-4 mt-10 font-regular font-ubuntu text-xl text-white">
                <p className="text-orange-400"> A. Vision and mission statement for investors </p>
 <br></br>
 <br></br>
@@ -121,7 +121,7 @@ i.Do not share login credential and password of your trading and demat accounts 
 
 
 
-                </p>
+                </div>
 
             </div>
             <div class="w-full mt-10 h-auto py-8 flex items-center justify-center gap-4 flex-wrap">

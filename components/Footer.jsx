@@ -20,7 +20,7 @@ export default function Footer(){
           </Link>
           <br></br><br></br>
           Equitystreet Investment advisor is an Individual registered Investment Advisor (RIA)
-SEBI Reg.No. INA000019363 | Validity 2nd July 2024 – Perpetual 
+SEBI Reg.No. INA000019363 | Validity 2nd July 2024 – Perpetual |
 BASL membership ID 2185
 <br></br><br></br>
 Proprietor : MAHESH THANGARAJU, +91 9629484649
