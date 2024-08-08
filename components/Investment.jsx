@@ -77,7 +77,7 @@ b.Ensure that the Investment Adviser has a valid registration certificate.
 <br></br>
 c.Check for SEBI registration number
 Please refer to the list of all SEBI registered Investment Advisers which is available on SEBI website in the following link:  
- <a className="text-achu" href="https://www.sebi.gov.in/sebiweb/other/OtherAction.do?doRecognisedFpi=yes&intmId=13"> https://www.sebi.gov.in/sebiweb/other/OtherAction.do?doRecognisedFpi=yes&intmId=13</a><br></br>
+ <a className="text-achu" href="https://www.sebi.gov.in/sebiweb/other/OtherAction.do?doRecognisedFpi=yes&intmId=13"> SEBI Website</a><br></br>
 Pay only advisory fees to your Investment Adviser. Make payments of advisory fees through banking channels only and maintain duly signed receipts mentioning the details of your payments.
 <br></br>
 d.Always ask for your risk profiling before accepting investment advice. Insist that Investment Adviser provides advisory strictly on the basis of your risk profiling and take into account available investment alternatives.
