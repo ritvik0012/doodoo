@@ -12,11 +12,11 @@ export default function Footer(){
         <div className="sm:w-3/5 p-5">
             <div className="text">
                 {/*<span className="text-gray-500 border-b-2 border-indigo-600 uppercase">About us</span>*/}
-                <h1 className="my-4 font-ubuntu text-gray-900 font-bold text-xl ">IMPORTANT <span className="text-bull">LINKS</span>
+                <h1 className="font-ubuntu text-gray-900 font-bold text-xl ">IMPORTANT <span className="text-bull">LINKS</span>
                 </h1> 
 
                     <Link href="/investmentcharter" className="text-l text-bold text-bull font-ubuntu font-semi-bold hover:underline decoration-sky-600 hover:decoration-gray-800">
-            INVESTMENT CHARTER
+            INVESTOR CHARTER
           </Link>
           <br></br><br></br>
           Equitystreet Investment advisor is an Individual registered Investment Advisor (RIA)
