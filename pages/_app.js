@@ -8,6 +8,7 @@ export default function App({ Component, pageProps }) {
     return (
     <>
     <Head>
+      <title>Equity Street - SEBI Registered Investment Advisor Bangalore</title>
       </Head>
     <Component {...pageProps}/>
     </>
